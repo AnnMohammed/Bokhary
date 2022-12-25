@@ -24,6 +24,9 @@
 		9D2684D829588D8E005DFB04 /* HomeVC+TableEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */; };
 		9D2684E529589340005DFB04 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2684E329589340005DFB04 /* HomeTableViewCell.swift */; };
 		9D2684E629589340005DFB04 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2684E429589340005DFB04 /* HomeTableViewCell.xib */; };
+		9D9D36DC2958F8FE00A50F24 /* SliderHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */; };
+		9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */; };
+		9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */; };
 		9DC858DA29589CD800589967 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC858D829589CD800589967 /* MenuViewController.swift */; };
 		9DC858DB29589CD800589967 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC858D929589CD800589967 /* MenuViewController.xib */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,9 @@
 		9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableEX.swift"; sourceTree = "<group>"; };
 		9D2684E329589340005DFB04 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9D2684E429589340005DFB04 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderHomeTableViewCell.swift; sourceTree = "<group>"; };
+		9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderHomeTableViewCell.xib; sourceTree = "<group>"; };
+		9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EX.swift"; sourceTree = "<group>"; };
 		9DC858D829589CD800589967 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9DC858D929589CD800589967 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,7 @@
 		9D1D25C42958497C0041431D /* Bokhary */ = {
 			isa = PBXGroup;
 			children = (
+				9D9D36DE2959099200A50F24 /* EXtension */,
 				9DC858D329589C3700589967 /* Menu */,
 				9D1D25E629586E1A0041431D /* Home */,
 				9D1D25DC29585C390041431D /* Branches */,
@@ -133,7 +140,7 @@
 		9D1D25E629586E1A0041431D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9D1D25E929586E410041431D /* Controller */,
+				9D9D36D92958F85200A50F24 /* ViewModel */,
 				9D1D25E829586E370041431D /* View */,
 			);
 			path = Home;
@@ -149,21 +156,11 @@
 		9D1D25E829586E370041431D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9D2684E229589325005DFB04 /* HomeTableViewCell */,
-				9D2684D629588D4D005DFB04 /* HomeViewController */,
-				9D2684D529588CEF005DFB04 /* HomeCollectionViewCell */,
+				9D9D36D72958F7E400A50F24 /* ViewController */,
+				9D9D36D62958F7A800A50F24 /* Cell */,
 				9D1D25E729586E2E0041431D /* Model */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		9D1D25E929586E410041431D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9D1D25F229587E850041431D /* HomeViewController+EX.swift */,
-				9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		9D2684D529588CEF005DFB04 /* HomeCollectionViewCell */ = {
@@ -191,6 +188,58 @@
 				9D2684E429589340005DFB04 /* HomeTableViewCell.xib */,
 			);
 			path = HomeTableViewCell;
+			sourceTree = "<group>";
+		};
+		9D9D36D52958F71D00A50F24 /* Slider Home */ = {
+			isa = PBXGroup;
+			children = (
+				9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */,
+				9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */,
+			);
+			path = "Slider Home";
+			sourceTree = "<group>";
+		};
+		9D9D36D62958F7A800A50F24 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D9D36D52958F71D00A50F24 /* Slider Home */,
+				9D2684D529588CEF005DFB04 /* HomeCollectionViewCell */,
+				9D2684E229589325005DFB04 /* HomeTableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9D9D36D72958F7E400A50F24 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D9D36D82958F82000A50F24 /* Home+EX */,
+				9D2684D629588D4D005DFB04 /* HomeViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D9D36D82958F82000A50F24 /* Home+EX */ = {
+			isa = PBXGroup;
+			children = (
+				9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */,
+				9D1D25F229587E850041431D /* HomeViewController+EX.swift */,
+			);
+			path = "Home+EX";
+			sourceTree = "<group>";
+		};
+		9D9D36D92958F85200A50F24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D9D36DE2959099200A50F24 /* EXtension */ = {
+			isa = PBXGroup;
+			children = (
+				9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */,
+			);
+			path = EXtension;
 			sourceTree = "<group>";
 		};
 		9DC858D329589C3700589967 /* Menu */ = {
@@ -294,6 +343,7 @@
 			files = (
 				9D1D25E329585CBC0041431D /* BranchesViewController.xib in Resources */,
 				9D2684E629589340005DFB04 /* HomeTableViewCell.xib in Resources */,
+				9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */,
 				9D1D25F129587D350041431D /* HomeCollectionViewCell.xib in Resources */,
 				9DC858DB29589CD800589967 /* MenuViewController.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
@@ -318,9 +368,11 @@
 				9D1D25CA2958497C0041431D /* ViewController.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
 				9D2684E529589340005DFB04 /* HomeTableViewCell.swift in Sources */,
+				9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 				9D1D25F329587E850041431D /* HomeViewController+EX.swift in Sources */,
 				9D1D25EC29586E600041431D /* HomeViewController.swift in Sources */,
+				9D9D36DC2958F8FE00A50F24 /* SliderHomeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
