@@ -14,6 +14,22 @@
 		9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */; };
 		9D1D25D22958497F0041431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D12958497F0041431D /* Assets.xcassets */; };
 		9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D32958497F0041431D /* LaunchScreen.storyboard */; };
+		A653C9EA29585BA000B8DF52 /* CartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9E829585BA000B8DF52 /* CartCollectionViewCell.swift */; };
+		A653C9EB29585BA000B8DF52 /* CartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653C9E929585BA000B8DF52 /* CartCollectionViewCell.xib */; };
+		A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A653C9EC29585C0600B8DF52 /* Colors.xcassets */; };
+		A653C9EF29586B3B00B8DF52 /* CartViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9EE29586B3B00B8DF52 /* CartViewController+TableViewExt.swift */; };
+		A653C9F129586B5600B8DF52 /* CartViewController+CollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9F029586B5600B8DF52 /* CartViewController+CollectionViewExt.swift */; };
+		A653C9F52958715A00B8DF52 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9F32958715A00B8DF52 /* CartTableViewCell.swift */; };
+		A653C9F62958715A00B8DF52 /* CartTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653C9F42958715A00B8DF52 /* CartTableViewCell.xib */; };
+		A653C9F82958785900B8DF52 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9F72958785900B8DF52 /* UIButton+Ext.swift */; };
+		A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9FA29587F2200B8DF52 /* UIView+Ext.swift */; };
+		A653CA0129589EF500B8DF52 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653CA0029589EF500B8DF52 /* CartViewModel.swift */; };
+		A653CA052958A75B00B8DF52 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653CA032958A75B00B8DF52 /* CartViewController.swift */; };
+		A653CA062958A75B00B8DF52 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653CA042958A75B00B8DF52 /* CartViewController.xib */; };
+		A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6765EB62958B21F00C0DFDC /* SectionHeaderCell.swift */; };
+		A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6765EB72958B21F00C0DFDC /* SectionHeaderCell.xib */; };
+		A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */; };
+		A6765EC22958D6D800C0DFDC /* NoAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,22 @@
 		9D1D25D12958497F0041431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1D25D42958497F0041431D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1D25D62958497F0041431D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A653C9E829585BA000B8DF52 /* CartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCollectionViewCell.swift; sourceTree = "<group>"; };
+		A653C9E929585BA000B8DF52 /* CartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCollectionViewCell.xib; sourceTree = "<group>"; };
+		A653C9EC29585C0600B8DF52 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A653C9EE29586B3B00B8DF52 /* CartViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+TableViewExt.swift"; sourceTree = "<group>"; };
+		A653C9F029586B5600B8DF52 /* CartViewController+CollectionViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CartViewController+CollectionViewExt.swift"; sourceTree = "<group>"; };
+		A653C9F32958715A00B8DF52 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		A653C9F42958715A00B8DF52 /* CartTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartTableViewCell.xib; sourceTree = "<group>"; };
+		A653C9F72958785900B8DF52 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		A653C9FA29587F2200B8DF52 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		A653CA0029589EF500B8DF52 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		A653CA032958A75B00B8DF52 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		A653CA042958A75B00B8DF52 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
+		A6765EB62958B21F00C0DFDC /* SectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCell.swift; sourceTree = "<group>"; };
+		A6765EB72958B21F00C0DFDC /* SectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCell.xib; sourceTree = "<group>"; };
+		A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAddressViewController.swift; sourceTree = "<group>"; };
+		A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAddressViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +94,140 @@
 				9D1D25C72958497C0041431D /* SceneDelegate.swift */,
 				9D1D25C92958497C0041431D /* ViewController.swift */,
 				9D1D25CB2958497C0041431D /* Main.storyboard */,
+				A653C9DF29584EBA00B8DF52 /* Cart */,
+				A6765EBA2958D65A00C0DFDC /* No Address */,
+				A653C9F92958786700B8DF52 /* Extentions */,
 				9D1D25D12958497F0041431D /* Assets.xcassets */,
+				A653C9EC29585C0600B8DF52 /* Colors.xcassets */,
 				9D1D25D32958497F0041431D /* LaunchScreen.storyboard */,
 				9D1D25D62958497F0041431D /* Info.plist */,
 				9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */,
 			);
 			path = Bokhary;
+			sourceTree = "<group>";
+		};
+		A653C9DF29584EBA00B8DF52 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				A653C9E229584EFB00B8DF52 /* Model */,
+				A653C9E029584EE000B8DF52 /* View */,
+				A653CA0229589F0000B8DF52 /* ViewModel */,
+				A653C9E129584EED00B8DF52 /* Controller */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		A653C9E029584EE000B8DF52 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A653CA042958A75B00B8DF52 /* CartViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A653C9E129584EED00B8DF52 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A653CA032958A75B00B8DF52 /* CartViewController.swift */,
+				A653C9EE29586B3B00B8DF52 /* CartViewController+TableViewExt.swift */,
+				A653C9F029586B5600B8DF52 /* CartViewController+CollectionViewExt.swift */,
+				A653C9F22958713400B8DF52 /* CartTableViewCell */,
+				A653C9E729585B7100B8DF52 /* CartCollectionViewCell */,
+				A6765EB52958B1FB00C0DFDC /* SectionHeaderCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A653C9E229584EFB00B8DF52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A653C9E729585B7100B8DF52 /* CartCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A653C9E829585BA000B8DF52 /* CartCollectionViewCell.swift */,
+				A653C9E929585BA000B8DF52 /* CartCollectionViewCell.xib */,
+			);
+			path = CartCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A653C9F22958713400B8DF52 /* CartTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A653C9F32958715A00B8DF52 /* CartTableViewCell.swift */,
+				A653C9F42958715A00B8DF52 /* CartTableViewCell.xib */,
+			);
+			path = CartTableViewCell;
+			sourceTree = "<group>";
+		};
+		A653C9F92958786700B8DF52 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A653C9F72958785900B8DF52 /* UIButton+Ext.swift */,
+				A653C9FA29587F2200B8DF52 /* UIView+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		A653CA0229589F0000B8DF52 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A653CA0029589EF500B8DF52 /* CartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6765EB52958B1FB00C0DFDC /* SectionHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6765EB62958B21F00C0DFDC /* SectionHeaderCell.swift */,
+				A6765EB72958B21F00C0DFDC /* SectionHeaderCell.xib */,
+			);
+			path = SectionHeaderCell;
+			sourceTree = "<group>";
+		};
+		A6765EBA2958D65A00C0DFDC /* No Address */ = {
+			isa = PBXGroup;
+			children = (
+				A6765EBE2958D6B100C0DFDC /* Model */,
+				A6765EBD2958D6A800C0DFDC /* View */,
+				A6765EBC2958D6A100C0DFDC /* ViewModel */,
+				A6765EBB2958D69900C0DFDC /* Controller */,
+			);
+			path = "No Address";
+			sourceTree = "<group>";
+		};
+		A6765EBB2958D69900C0DFDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6765EBC2958D6A100C0DFDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6765EBD2958D6A800C0DFDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */,
+				A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6765EBE2958D6B100C0DFDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +288,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6765EC22958D6D800C0DFDC /* NoAddressViewController.xib in Resources */,
+				A653CA062958A75B00B8DF52 /* CartViewController.xib in Resources */,
+				A653C9EB29585BA000B8DF52 /* CartCollectionViewCell.xib in Resources */,
+				A653C9F62958715A00B8DF52 /* CartTableViewCell.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
+				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
+				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
 				9D1D25D22958497F0041431D /* Assets.xcassets in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
 			);
@@ -141,9 +307,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A653C9EF29586B3B00B8DF52 /* CartViewController+TableViewExt.swift in Sources */,
+				A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */,
+				A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */,
+				A653C9F129586B5600B8DF52 /* CartViewController+CollectionViewExt.swift in Sources */,
+				A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */,
 				9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */,
+				A653C9F52958715A00B8DF52 /* CartTableViewCell.swift in Sources */,
 				9D1D25CA2958497C0041431D /* ViewController.swift in Sources */,
+				A653CA052958A75B00B8DF52 /* CartViewController.swift in Sources */,
+				A653C9F82958785900B8DF52 /* UIButton+Ext.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
+				A653C9EA29585BA000B8DF52 /* CartCollectionViewCell.swift in Sources */,
+				A653CA0129589EF500B8DF52 /* CartViewModel.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,11 +467,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK3DJJFRK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bokhary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,11 +496,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HK3DJJFRK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bokhary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
