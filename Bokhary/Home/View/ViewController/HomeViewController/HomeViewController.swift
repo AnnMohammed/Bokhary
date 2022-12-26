@@ -38,33 +38,38 @@ class HomeViewController: UIViewController {
         title = "Home"
         navigationController?.setNavigationBarHidden(false, animated: true)
         
-        if #available(iOS 15, *) {
-                // Navigation Bar background color
-                let appearance = UINavigationBarAppearance()
-                appearance.configureWithOpaqueBackground()
-                appearance.backgroundColor = UIColor.init(hexString: "#D39C65")
-                
-                // setup title font color
-                let titleAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25, weight: .bold), NSAttributedString.Key.foregroundColor: UIColor.white]
-                appearance.titleTextAttributes = titleAttribute
-                
-                navigationController?.navigationBar.standardAppearance = appearance
-                navigationController?.navigationBar.scrollEdgeAppearance = appearance
-            }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped)) //UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
-
-        let add = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped))
-        let play = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped))
-
-        navigationItem.leftBarButtonItems = [add, play]
+        //UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+//
+//        if #available(iOS 15, *) {
+//                // Navigation Bar background color
+//                let appearance = UINavigationBarAppearance()
+//                appearance.configureWithOpaqueBackground()
+//                appearance.backgroundColor = UIColor.init(hexString: "#D39C65")
+//
+//                // setup title font color
+//                let titleAttribute = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25, weight: .bold), NSAttributedString.Key.foregroundColor: UIColor.white]
+//                appearance.titleTextAttributes = titleAttribute
+//
+//                navigationController?.navigationBar.standardAppearance = appearance
+//                navigationController?.navigationBar.scrollEdgeAppearance = appearance
+//            }
+//
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped)) //UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addTapped))
+//
+//        let add = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped))
+//        let play = UIBarButtonItem(image: UIImage(systemName: "person"), style: .plain, target: self, action: #selector(addTapped))
+//
+//        navigationItem.leftBarButtonItems = [add, play]
         
     }
     
     @objc func addTapped() {
-        
+
         print("cart")
-        
+
     }
     
 
