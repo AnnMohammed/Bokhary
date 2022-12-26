@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectAddressViewController" customModule="Bokhary" customModuleProvider="target">
+            <connections>
+                <outlet property="addressesTableView" destination="vgr-Ba-hKP" id="Tmi-CQ-dU6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2w8-xv-NNx">
+                    <rect key="frame" x="20" y="206" width="374" height="466"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVt-TI-7rU">
+                            <rect key="frame" x="110" y="26" width="154" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="154" id="89g-BO-GDk"/>
+                                <constraint firstAttribute="height" constant="21" id="d1l-D3-Xh4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-Rw-Idp">
+                            <rect key="frame" x="201" y="412" width="153" height="43"/>
+                            <color key="backgroundColor" name="Red2"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="153" id="Chf-bc-kBM"/>
+                                <constraint firstAttribute="height" constant="43" id="STH-hD-MT2"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Confirm Address">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Red1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirmAddressButton:" destination="-1" eventType="touchUpInside" id="PaX-t6-lNp"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vgr-Ba-hKP">
+                            <rect key="frame" x="8" y="69" width="358" height="320"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="358" id="Cvt-Vm-EGp"/>
+                            </constraints>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-nf-eSK">
+                            <rect key="frame" x="29" y="411" width="153" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="153" id="IbR-Aa-NFF"/>
+                                <constraint firstAttribute="height" constant="43" id="vUY-4u-QiU"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Add New">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="13"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="Red1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addNewAddressButton:" destination="-1" eventType="touchUpInside" id="jZ7-Fq-Wwf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SaC-nf-eSK" secondAttribute="bottom" constant="12" id="9da-y1-z1S"/>
+                        <constraint firstItem="tVt-TI-7rU" firstAttribute="top" secondItem="2w8-xv-NNx" secondAttribute="top" constant="26" id="CkT-nb-uhI"/>
+                        <constraint firstItem="tVt-TI-7rU" firstAttribute="centerX" secondItem="2w8-xv-NNx" secondAttribute="centerX" id="aN3-lo-07Q"/>
+                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="8" id="aRY-zJ-9ml"/>
+                        <constraint firstItem="wSy-Rw-Idp" firstAttribute="top" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="23" id="cdM-dz-kNb"/>
+                        <constraint firstItem="wSy-Rw-Idp" firstAttribute="leading" secondItem="SaC-nf-eSK" secondAttribute="trailing" constant="19" id="gC0-ge-IW2"/>
+                        <constraint firstItem="SaC-nf-eSK" firstAttribute="top" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="22" id="kJT-rk-Qdj"/>
+                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="top" secondItem="tVt-TI-7rU" secondAttribute="bottom" constant="22" id="ki2-HW-lG5"/>
+                        <constraint firstAttribute="trailing" secondItem="wSy-Rw-Idp" secondAttribute="trailing" constant="20" symbolic="YES" id="ksR-pQ-29U"/>
+                        <constraint firstItem="SaC-nf-eSK" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="29" id="lCb-Kr-q2S"/>
+                        <constraint firstAttribute="bottom" secondItem="wSy-Rw-Idp" secondAttribute="bottom" constant="11" id="qtf-zG-PiE"/>
+                        <constraint firstAttribute="trailing" secondItem="vgr-Ba-hKP" secondAttribute="trailing" constant="8" id="tXo-K4-VxP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2w8-xv-NNx" secondAttribute="bottom" constant="190" id="4g3-Ot-RJq"/>
+                <constraint firstItem="2w8-xv-NNx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="158" id="jQJ-iV-ZbQ"/>
+                <constraint firstItem="2w8-xv-NNx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sDI-sf-7vT"/>
+            </constraints>
+            <point key="canvasLocation" x="-121.73913043478262" y="1.3392857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Red1">
+            <color red="0.80800002813339233" green="0.082000002264976501" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red2">
+            <color red="0.68999999761581421" green="0.12200000137090683" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

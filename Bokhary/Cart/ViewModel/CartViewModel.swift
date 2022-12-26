@@ -17,4 +17,5 @@ class CartViewModel {
     let prices = ["20.00 BHD", "5.000 BHD", "25.00 BHD"]
     let collectionViewIcons = ["deliveryIcon", "pickupIcon"]
     let collectionViewNames = ["Delivery","Pick up"]
+    let sectionHeaderCellID = "SectionHeaderCell"
 }

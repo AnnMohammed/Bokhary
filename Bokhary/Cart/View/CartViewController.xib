@@ -47,6 +47,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="754" id="j7U-3q-raa"/>
                     </constraints>
+                    <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="N9S-Mg-ch6" userLabel="header view">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

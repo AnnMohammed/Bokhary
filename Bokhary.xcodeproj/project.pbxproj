@@ -14,6 +14,16 @@
 		9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */; };
 		9D1D25D22958497F0041431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D12958497F0041431D /* Assets.xcassets */; };
 		9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D32958497F0041431D /* LaunchScreen.storyboard */; };
+		A6377426295A26610072D076 /* AddressDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */; };
+		A6377427295A26610072D076 /* AddressDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */; };
+		A637742B295A33410072D076 /* PaymentMethodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */; };
+		A637742C295A33410072D076 /* PaymentMethodsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A637742A295A33410072D076 /* PaymentMethodsTableViewCell.xib */; };
+		A637742E295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A637742D295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift */; };
+		A6377432295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377430295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift */; };
+		A6377433295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6377431295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib */; };
+		A6405CAF2959A1780057F530 /* SelectAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6405CAD2959A1780057F530 /* SelectAddressTableViewCell.swift */; };
+		A6405CB02959A1780057F530 /* SelectAddressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6405CAE2959A1780057F530 /* SelectAddressTableViewCell.xib */; };
+		A6405CB32959A2820057F530 /* SelectAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6405CB22959A2820057F530 /* SelectAddressViewModel.swift */; };
 		A653C9EA29585BA000B8DF52 /* CartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A653C9E829585BA000B8DF52 /* CartCollectionViewCell.swift */; };
 		A653C9EB29585BA000B8DF52 /* CartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A653C9E929585BA000B8DF52 /* CartCollectionViewCell.xib */; };
 		A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A653C9EC29585C0600B8DF52 /* Colors.xcassets */; };
@@ -30,6 +40,17 @@
 		A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6765EB72958B21F00C0DFDC /* SectionHeaderCell.xib */; };
 		A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */; };
 		A6765EC22958D6D800C0DFDC /* NoAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */; };
+		A6765ECC29599B8E00C0DFDC /* SelectAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6765ECA29599B8E00C0DFDC /* SelectAddressViewController.swift */; };
+		A6765ECD29599B8E00C0DFDC /* SelectAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6765ECB29599B8E00C0DFDC /* SelectAddressViewController.xib */; };
+		A6BB19E52959A94300145B4A /* SelectAddressViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB19E42959A94300145B4A /* SelectAddressViewController+TableViewExt.swift */; };
+		A6BB19EC2959AE0300145B4A /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB19EA2959AE0300145B4A /* AddAddressViewController.swift */; };
+		A6BB19ED2959AE0300145B4A /* AddAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BB19EB2959AE0300145B4A /* AddAddressViewController.xib */; };
+		A6EB66EB295A144B002E74E6 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB66E9295A144B002E74E6 /* CheckOutViewController.swift */; };
+		A6EB66EC295A144B002E74E6 /* CheckOutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EB66EA295A144B002E74E6 /* CheckOutViewController.xib */; };
+		A6EB66EE295A17F5002E74E6 /* CheckOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB66ED295A17F5002E74E6 /* CheckOutViewModel.swift */; };
+		A6EB66F0295A19B6002E74E6 /* CheckOutViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB66EF295A19B6002E74E6 /* CheckOutViewController+TableViewExt.swift */; };
+		A6EB66F4295A1B92002E74E6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EB66F2295A1B92002E74E6 /* ItemTableViewCell.swift */; };
+		A6EB66F5295A1B92002E74E6 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6EB66F3295A1B92002E74E6 /* ItemTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +63,16 @@
 		9D1D25D12958497F0041431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1D25D42958497F0041431D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1D25D62958497F0041431D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailsTableViewCell.xib; sourceTree = "<group>"; };
+		A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsTableViewCell.swift; sourceTree = "<group>"; };
+		A637742A295A33410072D076 /* PaymentMethodsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodsTableViewCell.xib; sourceTree = "<group>"; };
+		A637742D295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PaymentMethodsTableViewCell+CollectionViewExt.swift"; sourceTree = "<group>"; };
+		A6377430295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6377431295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6405CAD2959A1780057F530 /* SelectAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAddressTableViewCell.swift; sourceTree = "<group>"; };
+		A6405CAE2959A1780057F530 /* SelectAddressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectAddressTableViewCell.xib; sourceTree = "<group>"; };
+		A6405CB22959A2820057F530 /* SelectAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAddressViewModel.swift; sourceTree = "<group>"; };
 		A653C9E829585BA000B8DF52 /* CartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCollectionViewCell.swift; sourceTree = "<group>"; };
 		A653C9E929585BA000B8DF52 /* CartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCollectionViewCell.xib; sourceTree = "<group>"; };
 		A653C9EC29585C0600B8DF52 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -58,6 +89,17 @@
 		A6765EB72958B21F00C0DFDC /* SectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderCell.xib; sourceTree = "<group>"; };
 		A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAddressViewController.swift; sourceTree = "<group>"; };
 		A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAddressViewController.xib; sourceTree = "<group>"; };
+		A6765ECA29599B8E00C0DFDC /* SelectAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAddressViewController.swift; sourceTree = "<group>"; };
+		A6765ECB29599B8E00C0DFDC /* SelectAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectAddressViewController.xib; sourceTree = "<group>"; };
+		A6BB19E42959A94300145B4A /* SelectAddressViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectAddressViewController+TableViewExt.swift"; sourceTree = "<group>"; };
+		A6BB19EA2959AE0300145B4A /* AddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		A6BB19EB2959AE0300145B4A /* AddAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAddressViewController.xib; sourceTree = "<group>"; };
+		A6EB66E9295A144B002E74E6 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
+		A6EB66EA295A144B002E74E6 /* CheckOutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckOutViewController.xib; sourceTree = "<group>"; };
+		A6EB66ED295A17F5002E74E6 /* CheckOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewModel.swift; sourceTree = "<group>"; };
+		A6EB66EF295A19B6002E74E6 /* CheckOutViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckOutViewController+TableViewExt.swift"; sourceTree = "<group>"; };
+		A6EB66F2295A1B92002E74E6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		A6EB66F3295A1B92002E74E6 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +137,8 @@
 				9D1D25C92958497C0041431D /* ViewController.swift */,
 				9D1D25CB2958497C0041431D /* Main.storyboard */,
 				A653C9DF29584EBA00B8DF52 /* Cart */,
-				A6765EBA2958D65A00C0DFDC /* No Address */,
+				A6765EC529599B1A00C0DFDC /* Address PopUp Views */,
+				A6BB19EE2959D03C00145B4A /* Check out */,
 				A653C9F92958786700B8DF52 /* Extentions */,
 				9D1D25D12958497F0041431D /* Assets.xcassets */,
 				A653C9EC29585C0600B8DF52 /* Colors.xcassets */,
@@ -104,6 +147,43 @@
 				9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */,
 			);
 			path = Bokhary;
+			sourceTree = "<group>";
+		};
+		A6377423295A26440072D076 /* AddressDetailsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */,
+				A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */,
+			);
+			path = AddressDetailsTableViewCell;
+			sourceTree = "<group>";
+		};
+		A6377428295A32EC0072D076 /* PaymentMethodsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */,
+				A637742D295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift */,
+				A637742A295A33410072D076 /* PaymentMethodsTableViewCell.xib */,
+			);
+			path = PaymentMethodsTableViewCell;
+			sourceTree = "<group>";
+		};
+		A637742F295A36940072D076 /* PaymentMethodsCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6377430295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift */,
+				A6377431295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib */,
+			);
+			path = PaymentMethodsCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		A6405CAC2959A1520057F530 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6405CAD2959A1780057F530 /* SelectAddressTableViewCell.swift */,
+				A6405CAE2959A1780057F530 /* SelectAddressTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		A653C9DF29584EBA00B8DF52 /* Cart */ = {
@@ -203,6 +283,7 @@
 		A6765EBB2958D69900C0DFDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,7 +298,6 @@
 		A6765EBD2958D6A800C0DFDC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A6765EBF2958D6D800C0DFDC /* NoAddressViewController.swift */,
 				A6765EC02958D6D800C0DFDC /* NoAddressViewController.xib */,
 			);
 			path = View;
@@ -228,6 +308,157 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A6765EC329599AC400C0DFDC /* Select Address */ = {
+			isa = PBXGroup;
+			children = (
+				A6765EC929599B6500C0DFDC /* Model */,
+				A6765EC829599B5E00C0DFDC /* View */,
+				A6765EC729599B5200C0DFDC /* ViewModel */,
+				A6765EC629599B4A00C0DFDC /* Controller */,
+			);
+			path = "Select Address";
+			sourceTree = "<group>";
+		};
+		A6765EC429599B0200C0DFDC /* Add Address */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB19E92959ADE300145B4A /* Model */,
+				A6BB19E82959ADDD00145B4A /* View */,
+				A6BB19E72959ADD700145B4A /* ViewModel */,
+				A6BB19E62959ADCE00145B4A /* Controller */,
+			);
+			path = "Add Address";
+			sourceTree = "<group>";
+		};
+		A6765EC529599B1A00C0DFDC /* Address PopUp Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6765EBA2958D65A00C0DFDC /* No Address */,
+				A6765EC329599AC400C0DFDC /* Select Address */,
+				A6765EC429599B0200C0DFDC /* Add Address */,
+			);
+			path = "Address PopUp Views";
+			sourceTree = "<group>";
+		};
+		A6765EC629599B4A00C0DFDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6765ECA29599B8E00C0DFDC /* SelectAddressViewController.swift */,
+				A6BB19E42959A94300145B4A /* SelectAddressViewController+TableViewExt.swift */,
+				A6405CAC2959A1520057F530 /* TableViewCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6765EC729599B5200C0DFDC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6405CB22959A2820057F530 /* SelectAddressViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6765EC829599B5E00C0DFDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6765ECB29599B8E00C0DFDC /* SelectAddressViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6765EC929599B6500C0DFDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6BB19E62959ADCE00145B4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB19EA2959AE0300145B4A /* AddAddressViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6BB19E72959ADD700145B4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6BB19E82959ADDD00145B4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB19EB2959AE0300145B4A /* AddAddressViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6BB19E92959ADE300145B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6BB19EE2959D03C00145B4A /* Check out */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB19F22959D08200145B4A /* Model */,
+				A6BB19F12959D07D00145B4A /* View */,
+				A6BB19F02959D06A00145B4A /* ViewModel */,
+				A6BB19EF2959D05700145B4A /* Controller */,
+			);
+			path = "Check out";
+			sourceTree = "<group>";
+		};
+		A6BB19EF2959D05700145B4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB66E9295A144B002E74E6 /* CheckOutViewController.swift */,
+				A6EB66EF295A19B6002E74E6 /* CheckOutViewController+TableViewExt.swift */,
+				A6EB66F1295A1B74002E74E6 /* ItemTableViewCell */,
+				A6377423295A26440072D076 /* AddressDetailsTableViewCell */,
+				A6377428295A32EC0072D076 /* PaymentMethodsTableViewCell */,
+				A637742F295A36940072D076 /* PaymentMethodsCollectionViewCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6BB19F02959D06A00145B4A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB66ED295A17F5002E74E6 /* CheckOutViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6BB19F12959D07D00145B4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB66EA295A144B002E74E6 /* CheckOutViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6BB19F22959D08200145B4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EB66F1295A1B74002E74E6 /* ItemTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6EB66F2295A1B92002E74E6 /* ItemTableViewCell.swift */,
+				A6EB66F3295A1B92002E74E6 /* ItemTableViewCell.xib */,
+			);
+			path = ItemTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,15 +519,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6377433295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib in Resources */,
 				A6765EC22958D6D800C0DFDC /* NoAddressViewController.xib in Resources */,
+				A6377427295A26610072D076 /* AddressDetailsTableViewCell.xib in Resources */,
+				A6EB66EC295A144B002E74E6 /* CheckOutViewController.xib in Resources */,
 				A653CA062958A75B00B8DF52 /* CartViewController.xib in Resources */,
 				A653C9EB29585BA000B8DF52 /* CartCollectionViewCell.xib in Resources */,
+				A637742C295A33410072D076 /* PaymentMethodsTableViewCell.xib in Resources */,
+				A6765ECD29599B8E00C0DFDC /* SelectAddressViewController.xib in Resources */,
 				A653C9F62958715A00B8DF52 /* CartTableViewCell.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
 				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
 				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
+				A6405CB02959A1780057F530 /* SelectAddressTableViewCell.xib in Resources */,
 				9D1D25D22958497F0041431D /* Assets.xcassets in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
+				A6EB66F5295A1B92002E74E6 /* ItemTableViewCell.xib in Resources */,
+				A6BB19ED2959AE0300145B4A /* AddAddressViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,17 +546,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A637742E295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift in Sources */,
 				A653C9EF29586B3B00B8DF52 /* CartViewController+TableViewExt.swift in Sources */,
 				A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */,
 				A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */,
+				A6765ECC29599B8E00C0DFDC /* SelectAddressViewController.swift in Sources */,
 				A653C9F129586B5600B8DF52 /* CartViewController+CollectionViewExt.swift in Sources */,
 				A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */,
+				A6377432295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift in Sources */,
 				9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */,
+				A6BB19E52959A94300145B4A /* SelectAddressViewController+TableViewExt.swift in Sources */,
+				A6BB19EC2959AE0300145B4A /* AddAddressViewController.swift in Sources */,
+				A6EB66EE295A17F5002E74E6 /* CheckOutViewModel.swift in Sources */,
 				A653C9F52958715A00B8DF52 /* CartTableViewCell.swift in Sources */,
+				A6405CAF2959A1780057F530 /* SelectAddressTableViewCell.swift in Sources */,
+				A637742B295A33410072D076 /* PaymentMethodsTableViewCell.swift in Sources */,
 				9D1D25CA2958497C0041431D /* ViewController.swift in Sources */,
+				A6405CB32959A2820057F530 /* SelectAddressViewModel.swift in Sources */,
+				A6EB66F0295A19B6002E74E6 /* CheckOutViewController+TableViewExt.swift in Sources */,
 				A653CA052958A75B00B8DF52 /* CartViewController.swift in Sources */,
 				A653C9F82958785900B8DF52 /* UIButton+Ext.swift in Sources */,
+				A6377426295A26610072D076 /* AddressDetailsTableViewCell.swift in Sources */,
+				A6EB66F4295A1B92002E74E6 /* ItemTableViewCell.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
+				A6EB66EB295A144B002E74E6 /* CheckOutViewController.swift in Sources */,
 				A653C9EA29585BA000B8DF52 /* CartCollectionViewCell.swift in Sources */,
 				A653CA0129589EF500B8DF52 /* CartViewModel.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
@@ -470,10 +722,11 @@
 				DEVELOPMENT_TEAM = HK3DJJFRK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bokhary/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -499,10 +752,11 @@
 				DEVELOPMENT_TEAM = HK3DJJFRK7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bokhary/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to see current location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
