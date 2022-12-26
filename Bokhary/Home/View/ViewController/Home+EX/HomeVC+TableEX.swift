@@ -23,9 +23,7 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         }else {
             
             return 5
-            
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

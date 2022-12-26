@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContentColeectionViewCell" customModule="Bokhary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQs-UH-Npl">
+                        <rect key="frame" x="0.0" y="0.0" width="385" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home images" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-88-FHC">
+                                <rect key="frame" x="0.0" y="0.0" width="385" height="220"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamb chops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kE-fZ-pfv">
+                                <rect key="frame" x="19" y="185" width="99.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.00 BHD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-XA-9qz">
+                                <rect key="frame" x="300" y="187" width="66" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FgA-88-FHC" secondAttribute="bottom" id="5TW-r1-IDr"/>
+                            <constraint firstItem="6kE-fZ-pfv" firstAttribute="leading" secondItem="ZQs-UH-Npl" secondAttribute="leading" constant="19" id="B71-x7-fTH"/>
+                            <constraint firstAttribute="trailing" secondItem="FgA-88-FHC" secondAttribute="trailing" id="Jih-hz-d5e"/>
+                            <constraint firstAttribute="bottom" secondItem="6kE-fZ-pfv" secondAttribute="bottom" constant="14" id="dpa-A2-aad"/>
+                            <constraint firstItem="UiC-XA-9qz" firstAttribute="centerY" secondItem="6kE-fZ-pfv" secondAttribute="centerY" id="j5q-eb-s5j"/>
+                            <constraint firstItem="FgA-88-FHC" firstAttribute="top" secondItem="ZQs-UH-Npl" secondAttribute="top" id="jQ6-u9-Ksb"/>
+                            <constraint firstItem="FgA-88-FHC" firstAttribute="leading" secondItem="ZQs-UH-Npl" secondAttribute="leading" id="oGF-9p-FdK"/>
+                            <constraint firstAttribute="trailing" secondItem="UiC-XA-9qz" secondAttribute="trailing" constant="19" id="qJK-3D-Cfe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZQs-UH-Npl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Reu-Qs-RBe"/>
+                <constraint firstItem="ZQs-UH-Npl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="S35-Hd-G3m"/>
+                <constraint firstAttribute="trailing" secondItem="ZQs-UH-Npl" secondAttribute="trailing" id="STp-07-1OD"/>
+                <constraint firstAttribute="bottom" secondItem="ZQs-UH-Npl" secondAttribute="bottom" id="xfU-gb-5Zb"/>
+            </constraints>
+            <connections>
+                <outlet property="contentCollectionCellView" destination="ZQs-UH-Npl" id="JPb-md-zWW"/>
+                <outlet property="contentImage" destination="FgA-88-FHC" id="WqL-zm-lS1"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="112.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Home images" width="428" height="214"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

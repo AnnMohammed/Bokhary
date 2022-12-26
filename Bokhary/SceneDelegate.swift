@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let vc = HomeViewController()
+            let vc = MenuViewController()
             
             window.rootViewController = UINavigationController(rootViewController: vc)
             self.window = window
