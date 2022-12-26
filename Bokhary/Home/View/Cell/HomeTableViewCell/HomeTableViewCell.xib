@@ -23,12 +23,25 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home images" translatesAutoresizingMaskIntoConstraints="NO" id="sfN-SD-jk9">
                                 <rect key="frame" x="0.0" y="0.0" width="380" height="214"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6F-eR-APH">
+                                <rect key="frame" x="10" y="154" width="360" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ael-Tq-SvQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sfN-SD-jk9" secondAttribute="trailing" id="J35-AJ-pik"/>
+                            <constraint firstItem="v6F-eR-APH" firstAttribute="leading" secondItem="RHC-fY-MIV" secondAttribute="leading" constant="10" id="NH9-VD-eVy"/>
                             <constraint firstAttribute="bottom" secondItem="sfN-SD-jk9" secondAttribute="bottom" id="clK-LE-h7D"/>
                             <constraint firstItem="sfN-SD-jk9" firstAttribute="top" secondItem="RHC-fY-MIV" secondAttribute="top" id="h6e-Y6-ZkD"/>
+                            <constraint firstAttribute="bottom" secondItem="v6F-eR-APH" secondAttribute="bottom" constant="10" id="wSS-xi-YBe"/>
+                            <constraint firstAttribute="trailing" secondItem="v6F-eR-APH" secondAttribute="trailing" constant="10" id="yEK-Bj-xw0"/>
                             <constraint firstItem="sfN-SD-jk9" firstAttribute="leading" secondItem="RHC-fY-MIV" secondAttribute="leading" id="zEG-2P-vlr"/>
                         </constraints>
                     </view>
@@ -43,6 +56,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="imageTableView" destination="sfN-SD-jk9" id="YcS-JH-yeV"/>
+                <outlet property="itemName" destination="v6F-eR-APH" id="RTe-0e-Rth"/>
                 <outlet property="tableCellView" destination="RHC-fY-MIV" id="xmf-Lq-MfI"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
@@ -52,6 +66,9 @@
         <image name="Home images" width="428" height="214"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

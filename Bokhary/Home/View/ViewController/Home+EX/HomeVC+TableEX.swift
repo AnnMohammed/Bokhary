@@ -42,7 +42,7 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource {
         }else {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-            
+            cell.itemName.text = "lamb chops"
             return cell
             
         }
