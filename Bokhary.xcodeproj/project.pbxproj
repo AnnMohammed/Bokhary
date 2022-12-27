@@ -16,6 +16,10 @@
 		9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D32958497F0041431D /* LaunchScreen.storyboard */; };
 		A61E24B7295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E24B5295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift */; };
 		A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */; };
+		A61E24C3295B104F0023CFE6 /* SelectAndAddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E24C1295B104F0023CFE6 /* SelectAndAddAddressViewController.swift */; };
+		A61E24C4295B104F0023CFE6 /* SelectAndAddAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E24C2295B104F0023CFE6 /* SelectAndAddAddressViewController.xib */; };
+		A61E24C6295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E24C5295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift */; };
+		A61E24C8295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E24C7295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift */; };
 		A6377426295A26610072D076 /* AddressDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */; };
 		A6377427295A26610072D076 /* AddressDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */; };
 		A637742B295A33410072D076 /* PaymentMethodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */; };
@@ -67,6 +71,10 @@
 		9D1D25D62958497F0041431D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A61E24B5295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderButtonTableViewCell.swift; sourceTree = "<group>"; };
 		A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderButtonTableViewCell.xib; sourceTree = "<group>"; };
+		A61E24C1295B104F0023CFE6 /* SelectAndAddAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAndAddAddressViewController.swift; sourceTree = "<group>"; };
+		A61E24C2295B104F0023CFE6 /* SelectAndAddAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectAndAddAddressViewController.xib; sourceTree = "<group>"; };
+		A61E24C5295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAndAddAddressViewModel.swift; sourceTree = "<group>"; };
+		A61E24C7295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectAndAddAddressViewController+TableViewExt.swift"; sourceTree = "<group>"; };
 		A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsTableViewCell.swift; sourceTree = "<group>"; };
@@ -143,6 +151,7 @@
 				A653C9DF29584EBA00B8DF52 /* Cart */,
 				A6765EC529599B1A00C0DFDC /* Address PopUp Views */,
 				A6BB19EE2959D03C00145B4A /* Check out */,
+				A61E24B9295B03AE0023CFE6 /* Select And Add Address */,
 				A653C9F92958786700B8DF52 /* Extentions */,
 				9D1D25D12958497F0041431D /* Assets.xcassets */,
 				A653C9EC29585C0600B8DF52 /* Colors.xcassets */,
@@ -160,6 +169,41 @@
 				A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */,
 			);
 			path = PlaceOrderButtonTableViewCell;
+			sourceTree = "<group>";
+		};
+		A61E24B9295B03AE0023CFE6 /* Select And Add Address */ = {
+			isa = PBXGroup;
+			children = (
+				A61E24BF295B0FEC0023CFE6 /* View */,
+				A61E24C0295B0FFC0023CFE6 /* ViewModel */,
+				A61E24BA295B0FB00023CFE6 /* Controller */,
+			);
+			path = "Select And Add Address";
+			sourceTree = "<group>";
+		};
+		A61E24BA295B0FB00023CFE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A61E24C1295B104F0023CFE6 /* SelectAndAddAddressViewController.swift */,
+				A61E24C7295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A61E24BF295B0FEC0023CFE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A61E24C2295B104F0023CFE6 /* SelectAndAddAddressViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A61E24C0295B0FFC0023CFE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A61E24C5295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A6377423295A26440072D076 /* AddressDetailsTableViewCell */ = {
@@ -543,6 +587,7 @@
 				A6765ECD29599B8E00C0DFDC /* SelectAddressViewController.xib in Resources */,
 				A653C9F62958715A00B8DF52 /* CartTableViewCell.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
+				A61E24C4295B104F0023CFE6 /* SelectAndAddAddressViewController.xib in Resources */,
 				A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */,
 				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
 				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
@@ -564,12 +609,15 @@
 				A637742E295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift in Sources */,
 				A653C9EF29586B3B00B8DF52 /* CartViewController+TableViewExt.swift in Sources */,
 				A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */,
+				A61E24C3295B104F0023CFE6 /* SelectAndAddAddressViewController.swift in Sources */,
 				A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */,
 				A6765ECC29599B8E00C0DFDC /* SelectAddressViewController.swift in Sources */,
 				A653C9F129586B5600B8DF52 /* CartViewController+CollectionViewExt.swift in Sources */,
+				A61E24C6295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift in Sources */,
 				A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */,
 				A6377432295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift in Sources */,
 				9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */,
+				A61E24C8295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift in Sources */,
 				A6BB19E52959A94300145B4A /* SelectAddressViewController+TableViewExt.swift in Sources */,
 				A6BB19EC2959AE0300145B4A /* AddAddressViewController.swift in Sources */,
 				A6EB66EE295A17F5002E74E6 /* CheckOutViewModel.swift in Sources */,
