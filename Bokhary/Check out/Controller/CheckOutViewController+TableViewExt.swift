@@ -8,7 +8,7 @@ import UIKit
 extension CheckOutViewController: UITableViewDelegate, UITableViewDataSource {
    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 60
@@ -32,6 +32,8 @@ extension CheckOutViewController: UITableViewDelegate, UITableViewDataSource {
                 return 65
             }
             return 25
+        case 4:
+            return 50
         default:
            return 30
         }
@@ -60,8 +62,10 @@ extension CheckOutViewController: UITableViewDelegate, UITableViewDataSource {
             return 1
         case 3:
             return checkOutViewModel.paymentSummaryCount
+        case 4:
+            return 1
         default:
-           return 10
+           return 1
         }
     }
     
@@ -70,6 +74,7 @@ extension CheckOutViewController: UITableViewDelegate, UITableViewDataSource {
         let addressDetailsCell = checkOutTableView.dequeueReusableCell(withIdentifier: checkOutViewModel.addressDetailsTableViewCellID) as! AddressDetailsTableViewCell
         let paymentMethodsCell = checkOutTableView.dequeueReusableCell(withIdentifier: checkOutViewModel.paymentMethodsTableViewCellID) as! PaymentMethodsTableViewCell
         let paymentDetailsCell = checkOutTableView.dequeueReusableCell(withIdentifier: cartViewModel.carttTableViewCellID) as! CartTableViewCell
+        let placeOrderButtonCell = checkOutTableView.dequeueReusableCell(withIdentifier: checkOutViewModel.placeOrderButtonTableViewCellID) as! PlaceOrderButtonTableViewCell
         switch indexPath.section {
         case 0:
             return  itemDetailsCell
@@ -87,6 +92,8 @@ extension CheckOutViewController: UITableViewDelegate, UITableViewDataSource {
                 paymentDetailsCell.priceLabel.font = .systemFont(ofSize: 13, weight: .heavy)
             }
             return  paymentDetailsCell
+        case 4:
+            return placeOrderButtonCell
         default:
            return  paymentDetailsCell
         }

@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="blockTextField" destination="lyQ-c4-66f" id="RoN-LS-NvR"/>
                 <outlet property="buildingTextField" destination="mgs-LN-YUx" id="Xpr-R6-rbX"/>
+                <outlet property="confirmButtonOutlet" destination="bIA-fe-lmJ" id="9fa-NW-f1i"/>
                 <outlet property="deliveryNotesTextField" destination="oWG-tF-AyO" id="zGi-8D-UVy"/>
                 <outlet property="mapView" destination="CDK-qM-KyS" id="SqA-ue-fdo"/>
                 <outlet property="regionTextField" destination="H4j-98-g0O" id="BFI-WB-BqT"/>
@@ -248,7 +249,7 @@
                                         <constraint firstAttribute="width" constant="334" id="OE7-aP-jxn"/>
                                         <constraint firstAttribute="height" constant="60" id="t5U-5f-xGp"/>
                                     </constraints>
-                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
@@ -274,46 +275,45 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIA-fe-lmJ">
-                            <rect key="frame" x="90" y="700" width="207" height="43"/>
+                            <rect key="frame" x="82" y="700" width="207" height="43"/>
                             <color key="backgroundColor" name="Red2"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="207" id="ZTi-u0-DMe"/>
-                                <constraint firstAttribute="height" constant="43" id="qeA-co-9YU"/>
+                                <constraint firstAttribute="width" constant="207" id="LUZ-pF-wfr"/>
+                                <constraint firstAttribute="height" constant="43" id="cMq-8v-gkM"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Confirm Address">
+                            <buttonConfiguration key="configuration" style="plain" title="Confirm Address" titleAlignment="center">
                                 <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="23"/>
+                                    <real key="value" value="21.5"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                    <real key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" name="Red1"/>
+                                    <real key="value" value="0.0"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="confirmButtonAction:" destination="-1" eventType="touchUpInside" id="Wk6-dF-inJ"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="bIA-fe-lmJ" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="90" id="3sw-3C-72j"/>
                         <constraint firstItem="mMQ-fn-Wme" firstAttribute="top" secondItem="HrG-fA-svG" secondAttribute="bottom" constant="23" id="6Yj-jQ-1hp"/>
                         <constraint firstItem="rcH-hf-8al" firstAttribute="top" secondItem="L3u-Z1-KKu" secondAttribute="bottom" constant="14" id="8FZ-hF-JiX"/>
                         <constraint firstAttribute="trailing" secondItem="L3u-Z1-KKu" secondAttribute="trailing" constant="8" id="8s3-pT-qGD"/>
-                        <constraint firstItem="bIA-fe-lmJ" firstAttribute="top" secondItem="LxI-AQ-gHO" secondAttribute="bottom" constant="20" id="AFA-Cy-0FP"/>
                         <constraint firstItem="LxI-AQ-gHO" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="12" id="B7G-bY-OLm"/>
-                        <constraint firstAttribute="bottom" secondItem="bIA-fe-lmJ" secondAttribute="bottom" constant="37" id="CQf-cA-vYo"/>
                         <constraint firstItem="L3u-Z1-KKu" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="12" id="DiE-6N-ub1"/>
                         <constraint firstItem="PGw-bw-02l" firstAttribute="top" secondItem="dHd-io-sSc" secondAttribute="top" constant="30" id="Enp-WJ-E1N"/>
-                        <constraint firstAttribute="trailing" secondItem="bIA-fe-lmJ" secondAttribute="trailing" constant="73" id="FEX-wn-hhU"/>
                         <constraint firstItem="mjD-vc-CGv" firstAttribute="top" secondItem="dZG-RM-UjW" secondAttribute="bottom" constant="12" id="HRY-YV-4FC"/>
                         <constraint firstAttribute="height" constant="780" id="HY2-N9-lFb"/>
                         <constraint firstAttribute="trailing" secondItem="HrG-fA-svG" secondAttribute="trailing" constant="8" id="L3y-wA-EP6"/>
                         <constraint firstItem="LxI-AQ-gHO" firstAttribute="top" secondItem="mMQ-fn-Wme" secondAttribute="bottom" constant="17" id="LEX-Gt-QeK"/>
+                        <constraint firstAttribute="trailing" secondItem="bIA-fe-lmJ" secondAttribute="trailing" constant="81" id="MJf-yw-b6l"/>
+                        <constraint firstAttribute="bottom" secondItem="bIA-fe-lmJ" secondAttribute="bottom" constant="37" id="OlW-m5-Kv8"/>
+                        <constraint firstItem="bIA-fe-lmJ" firstAttribute="top" secondItem="LxI-AQ-gHO" secondAttribute="bottom" constant="20" id="Pg9-2H-CPQ"/>
                         <constraint firstItem="ImD-vz-yZQ" firstAttribute="top" secondItem="4h5-ZC-uxQ" secondAttribute="bottom" constant="17" id="RpE-MC-Njl"/>
                         <constraint firstItem="mMQ-fn-Wme" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="12" id="VDj-BA-Cfd"/>
                         <constraint firstItem="HBE-tk-jhT" firstAttribute="top" secondItem="CDK-qM-KyS" secondAttribute="bottom" constant="18" id="WDk-pH-6yG"/>
@@ -322,6 +322,7 @@
                         <constraint firstAttribute="trailing" secondItem="LxI-AQ-gHO" secondAttribute="trailing" constant="8" id="Xg3-p7-PGd"/>
                         <constraint firstItem="CDK-qM-KyS" firstAttribute="top" secondItem="PGw-bw-02l" secondAttribute="bottom" constant="25" id="YYQ-Aw-t8e"/>
                         <constraint firstItem="dZG-RM-UjW" firstAttribute="top" secondItem="HBE-tk-jhT" secondAttribute="bottom" constant="23" id="aTg-Kh-8KO"/>
+                        <constraint firstItem="bIA-fe-lmJ" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="82" id="aX1-Ri-WPr"/>
                         <constraint firstAttribute="trailing" secondItem="CDK-qM-KyS" secondAttribute="trailing" constant="8" id="cmH-OG-8kw"/>
                         <constraint firstItem="4h5-ZC-uxQ" firstAttribute="top" secondItem="mjD-vc-CGv" secondAttribute="bottom" constant="13" id="dx3-RY-wXb"/>
                         <constraint firstItem="mjD-vc-CGv" firstAttribute="leading" secondItem="dHd-io-sSc" secondAttribute="leading" constant="12" id="ePr-SN-o7F"/>
@@ -362,9 +363,6 @@
     <resources>
         <namedColor name="Primary">
             <color red="0.9179999828338623" green="0.82700002193450928" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Red1">
-            <color red="0.80800002813339233" green="0.082000002264976501" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Red2">
             <color red="0.68999999761581421" green="0.12200000137090683" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -10,8 +10,9 @@ import MapKit
 import CoreLocation
 
 class AddAddressViewController: UIViewController {
-let locationManager = CLLocationManager()
+    let locationManager = CLLocationManager()
     
+    @IBOutlet weak var confirmButtonOutlet: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var regionTextField: UITextField!
     @IBOutlet weak var blockTextField: UITextField!
@@ -21,7 +22,11 @@ let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initView()
+        
+    }
+    func initView() {
+        buttonsColors()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,7 +38,13 @@ let locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingHeading()
     }
-
+    func buttonsColors() {
+        self.confirmButtonOutlet.applyGradient(colors: [UIButton.UIColorFromRGB(0xB01F22).cgColor,UIButton.UIColorFromRGB(0xD92822).cgColor], num: 20, title: "")
+        
+    }
+    @IBAction func confirmButtonAction(_ sender: UIButton) {
+        
+    }
 }
 extension AddAddressViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

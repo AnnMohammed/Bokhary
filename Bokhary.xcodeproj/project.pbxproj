@@ -14,6 +14,8 @@
 		9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */; };
 		9D1D25D22958497F0041431D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D12958497F0041431D /* Assets.xcassets */; };
 		9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D1D25D32958497F0041431D /* LaunchScreen.storyboard */; };
+		A61E24B7295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E24B5295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift */; };
+		A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */; };
 		A6377426295A26610072D076 /* AddressDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */; };
 		A6377427295A26610072D076 /* AddressDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */; };
 		A637742B295A33410072D076 /* PaymentMethodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */; };
@@ -63,6 +65,8 @@
 		9D1D25D12958497F0041431D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1D25D42958497F0041431D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1D25D62958497F0041431D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A61E24B5295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOrderButtonTableViewCell.swift; sourceTree = "<group>"; };
+		A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceOrderButtonTableViewCell.xib; sourceTree = "<group>"; };
 		A6377424295A26600072D076 /* AddressDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsTableViewCell.swift; sourceTree = "<group>"; };
 		A6377425295A26600072D076 /* AddressDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		A6377429295A33410072D076 /* PaymentMethodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +151,15 @@
 				9D1D25CE2958497C0041431D /* Bokhary.xcdatamodeld */,
 			);
 			path = Bokhary;
+			sourceTree = "<group>";
+		};
+		A61E24B4295AFD3D0023CFE6 /* PlaceOrderButtonTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A61E24B5295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift */,
+				A61E24B6295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib */,
+			);
+			path = PlaceOrderButtonTableViewCell;
 			sourceTree = "<group>";
 		};
 		A6377423295A26440072D076 /* AddressDetailsTableViewCell */ = {
@@ -425,6 +438,7 @@
 				A6377423295A26440072D076 /* AddressDetailsTableViewCell */,
 				A6377428295A32EC0072D076 /* PaymentMethodsTableViewCell */,
 				A637742F295A36940072D076 /* PaymentMethodsCollectionViewCell */,
+				A61E24B4295AFD3D0023CFE6 /* PlaceOrderButtonTableViewCell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -529,6 +543,7 @@
 				A6765ECD29599B8E00C0DFDC /* SelectAddressViewController.xib in Resources */,
 				A653C9F62958715A00B8DF52 /* CartTableViewCell.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
+				A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */,
 				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
 				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
 				A6405CB02959A1780057F530 /* SelectAddressTableViewCell.xib in Resources */,
@@ -568,6 +583,7 @@
 				A653C9F82958785900B8DF52 /* UIButton+Ext.swift in Sources */,
 				A6377426295A26610072D076 /* AddressDetailsTableViewCell.swift in Sources */,
 				A6EB66F4295A1B92002E74E6 /* ItemTableViewCell.swift in Sources */,
+				A61E24B7295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
 				A6EB66EB295A144B002E74E6 /* CheckOutViewController.swift in Sources */,
 				A653C9EA29585BA000B8DF52 /* CartCollectionViewCell.swift in Sources */,

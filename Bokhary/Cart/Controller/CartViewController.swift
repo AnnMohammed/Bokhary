@@ -14,6 +14,8 @@ class CartViewController: UIViewController {
     @IBOutlet weak var cartCollectionView: UICollectionView!
     @IBOutlet weak var cartTableView: UITableView!
     
+    @IBOutlet weak var checkOutButtonOutlet: UIButton!
+    @IBOutlet weak var addItemsButtonOutlet: UIButton!
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var itemImageView: UIImageView!
     @IBOutlet weak var itemPriceLabel: UILabel!
@@ -26,8 +28,8 @@ class CartViewController: UIViewController {
     }
     
     @IBAction func addItemsButton(_ sender: UIButton) {
-       // presentSelectAddressPopUp()
-        goToCheckOutVC()
+        presentSelectAddressPopUp()
+       // goToCheckOutVC()
     }
     
     @IBAction func chechOutButton(_ sender: UIButton) {
@@ -55,6 +57,7 @@ class CartViewController: UIViewController {
         tableViewConfig()
         navBarConfig()
         counterLabel.text = "\(cartViewModel.count)"
+        buttonsColors()
     }
     func collectionViewConfig() {
         cartCollectionView.delegate = self
@@ -74,7 +77,9 @@ class CartViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .done, target: self, action: #selector(barButtonTapped))
         self.navigationController?.navigationBar.tintColor = UIColor(named: "CartColor")
     }
-    
+    func buttonsColors() {
+        self.checkOutButtonOutlet.applyGradient(colors: [UIButton.UIColorFromRGB(0xB01F22).cgColor,UIButton.UIColorFromRGB(0xD92822).cgColor], num: 0, title: "")
+    }
     @objc func barButtonTapped() {
         
     }

@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectAddressViewController" customModule="Bokhary" customModuleProvider="target">
             <connections>
+                <outlet property="addAddressButtonOutlet" destination="SaC-nf-eSK" id="ScZ-Hf-V1B"/>
                 <outlet property="addressesTableView" destination="vgr-Ba-hKP" id="Tmi-CQ-dU6"/>
+                <outlet property="confirmAddressButtonOutlet" destination="wSy-Rw-Idp" id="vfd-ym-HPU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,8 +37,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSy-Rw-Idp">
-                            <rect key="frame" x="201" y="412" width="153" height="43"/>
-                            <color key="backgroundColor" name="Red2"/>
+                            <rect key="frame" x="197" y="412" width="153" height="43"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="153" id="Chf-bc-kBM"/>
                                 <constraint firstAttribute="height" constant="43" id="STH-hD-MT2"/>
@@ -48,13 +49,10 @@
                             </buttonConfiguration>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="13"/>
+                                    <real key="value" value="21.5"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                    <real key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                    <color key="value" name="Red1"/>
+                                    <real key="value" value="0.0"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
@@ -69,7 +67,7 @@
                             </constraints>
                         </tableView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-nf-eSK">
-                            <rect key="frame" x="29" y="411" width="153" height="43"/>
+                            <rect key="frame" x="25" y="411" width="153" height="43"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="153" id="IbR-Aa-NFF"/>
                                 <constraint firstAttribute="height" constant="43" id="vUY-4u-QiU"/>
@@ -81,7 +79,7 @@
                             </buttonConfiguration>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                    <real key="value" value="13"/>
+                                    <real key="value" value="21.5"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                     <real key="value" value="1"/>
@@ -105,8 +103,8 @@
                         <constraint firstItem="wSy-Rw-Idp" firstAttribute="leading" secondItem="SaC-nf-eSK" secondAttribute="trailing" constant="19" id="gC0-ge-IW2"/>
                         <constraint firstItem="SaC-nf-eSK" firstAttribute="top" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="22" id="kJT-rk-Qdj"/>
                         <constraint firstItem="vgr-Ba-hKP" firstAttribute="top" secondItem="tVt-TI-7rU" secondAttribute="bottom" constant="22" id="ki2-HW-lG5"/>
-                        <constraint firstAttribute="trailing" secondItem="wSy-Rw-Idp" secondAttribute="trailing" constant="20" symbolic="YES" id="ksR-pQ-29U"/>
-                        <constraint firstItem="SaC-nf-eSK" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="29" id="lCb-Kr-q2S"/>
+                        <constraint firstAttribute="trailing" secondItem="wSy-Rw-Idp" secondAttribute="trailing" constant="24" id="ksR-pQ-29U"/>
+                        <constraint firstItem="SaC-nf-eSK" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="25" id="lCb-Kr-q2S"/>
                         <constraint firstAttribute="bottom" secondItem="wSy-Rw-Idp" secondAttribute="bottom" constant="11" id="qtf-zG-PiE"/>
                         <constraint firstAttribute="trailing" secondItem="vgr-Ba-hKP" secondAttribute="trailing" constant="8" id="tXo-K4-VxP"/>
                     </constraints>
@@ -130,9 +128,6 @@
     <resources>
         <namedColor name="Red1">
             <color red="0.80800002813339233" green="0.082000002264976501" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Red2">
-            <color red="0.68999999761581421" green="0.12200000137090683" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -13,6 +13,7 @@ class CheckOutViewModel {
     let addressDetailsTableViewCellID = "AddressDetailsTableViewCell"
     let paymentMethodsTableViewCellID = "PaymentMethodsTableViewCell"
     let paymentMethodsCollectionViewCellID = "PaymentMethodsCollectionViewCell"
+    let placeOrderButtonTableViewCellID = "PlaceOrderButtonTableViewCell"
     let paymentSummary = ["Sub Total :","VAT (10%) :","Delivery charge :" ,"Net Total :"]
     let prices = ["20.00 BHD", "5.000 BHD","5.000 BD ", "25.00 BHD"]
 }
