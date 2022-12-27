@@ -37,7 +37,13 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
             }
             else {
                 
-               return 1
+                if !isChanged {
+                    
+                    return 2
+                }else{
+                    
+                    return 1
+                }
                 
             }
         

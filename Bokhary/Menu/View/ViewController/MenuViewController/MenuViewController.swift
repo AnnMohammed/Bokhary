@@ -8,7 +8,11 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    
+    // variabels
+    var isChanged = false
+    
+    // Outlets
     @IBOutlet weak var contentCollectionview: UICollectionView!
     {
         
@@ -88,25 +92,14 @@ class MenuViewController: UIViewController {
     
     @IBAction func CollectionStyle(_ sender: Any) {
         
-        
-        
+        isChanged = true
+        print("tapped")
     }
     
     @IBAction func RowsStyle(_ sender: Any) {
         
-//        func numberOfSections(in collectionView: UICollectionView) -> Int {
-//            if collectionView == self.categorieCollectionView {
-//
-//                return 1
-//
-//                }
-//                else {
-//
-//                   return 1
-//
-//                }
-//        }
-//
+        isChanged = false
+
     }
     
 }
