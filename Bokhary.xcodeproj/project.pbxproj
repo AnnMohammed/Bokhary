@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3368FA56BF46ACA9DCDC9F26 /* Pods_Bokhary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309245C1694014386B3BC23F /* Pods_Bokhary.framework */; };
 		9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25C52958497C0041431D /* AppDelegate.swift */; };
 		9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25C72958497C0041431D /* SceneDelegate.swift */; };
 		9D1D25CA2958497C0041431D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1D25C92958497C0041431D /* ViewController.swift */; };
@@ -24,6 +25,11 @@
 		9D2684D829588D8E005DFB04 /* HomeVC+TableEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */; };
 		9D2684E529589340005DFB04 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2684E329589340005DFB04 /* HomeTableViewCell.swift */; };
 		9D2684E629589340005DFB04 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D2684E429589340005DFB04 /* HomeTableViewCell.xib */; };
+		9D879BC9295B973300715265 /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D879BC7295B973300715265 /* AddReviewViewController.swift */; };
+		9D879BCA295B973300715265 /* AddReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D879BC8295B973300715265 /* AddReviewViewController.xib */; };
+		9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D879BD5295BA76B00715265 /* CommentTableViewCell.swift */; };
+		9D879BD8295BA76B00715265 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D879BD6295BA76B00715265 /* CommentTableViewCell.xib */; };
+		9D879BDB295BAA3700715265 /* AddCmment+EXtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */; };
 		9D9D36DC2958F8FE00A50F24 /* SliderHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */; };
 		9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */; };
 		9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */; };
@@ -51,6 +57,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		309245C1694014386B3BC23F /* Pods_Bokhary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bokhary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C947F9D45E436BF2C3429F4 /* Pods-Bokhary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bokhary.debug.xcconfig"; path = "Target Support Files/Pods-Bokhary/Pods-Bokhary.debug.xcconfig"; sourceTree = "<group>"; };
 		9D1D25C22958497C0041431D /* Bokhary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bokhary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1D25C52958497C0041431D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1D25C72958497C0041431D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,11 @@
 		9D2684D729588D8E005DFB04 /* HomeVC+TableEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+TableEX.swift"; sourceTree = "<group>"; };
 		9D2684E329589340005DFB04 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		9D2684E429589340005DFB04 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		9D879BC7295B973300715265 /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		9D879BC8295B973300715265 /* AddReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddReviewViewController.xib; sourceTree = "<group>"; };
+		9D879BD5295BA76B00715265 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		9D879BD6295BA76B00715265 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
+		9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCmment+EXtension.swift"; sourceTree = "<group>"; };
 		9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderHomeTableViewCell.swift; sourceTree = "<group>"; };
 		9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderHomeTableViewCell.xib; sourceTree = "<group>"; };
 		9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EX.swift"; sourceTree = "<group>"; };
@@ -94,6 +107,7 @@
 		9DC96A95295B3D08004B80F7 /* RelateddishesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RelateddishesTableViewCell.xib; sourceTree = "<group>"; };
 		9DC96A99295B3EF9004B80F7 /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DC96A9A295B3EF9004B80F7 /* DishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		B9C9B051205356EB34903564 /* Pods-Bokhary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bokhary.release.xcconfig"; path = "Target Support Files/Pods-Bokhary/Pods-Bokhary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,17 +115,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3368FA56BF46ACA9DCDC9F26 /* Pods_Bokhary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		313BA8C2BF1615D8D4F546EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C947F9D45E436BF2C3429F4 /* Pods-Bokhary.debug.xcconfig */,
+				B9C9B051205356EB34903564 /* Pods-Bokhary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9D1D25B92958497C0041431D = {
 			isa = PBXGroup;
 			children = (
 				9D1D25C42958497C0041431D /* Bokhary */,
 				9D1D25C32958497C0041431D /* Products */,
+				313BA8C2BF1615D8D4F546EA /* Pods */,
+				BD9111B517589DC70633FEBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +152,7 @@
 		9D1D25C42958497C0041431D /* Bokhary */ = {
 			isa = PBXGroup;
 			children = (
+				9D879BC2295B969500715265 /* Add review */,
 				9DBC4BD52959D83A00D76C54 /* ProductDetails */,
 				9D9D36DE2959099200A50F24 /* EXtension */,
 				9DC858D329589C3700589967 /* Menu */,
@@ -227,6 +254,74 @@
 				9D2684E429589340005DFB04 /* HomeTableViewCell.xib */,
 			);
 			path = HomeTableViewCell;
+			sourceTree = "<group>";
+		};
+		9D879BC2295B969500715265 /* Add review */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BC5295B96EB00715265 /* View Model */,
+				9D879BC4295B96A600715265 /* View */,
+				9D879BC3295B969E00715265 /* Model */,
+			);
+			path = "Add review";
+			sourceTree = "<group>";
+		};
+		9D879BC3295B969E00715265 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D879BC4295B96A600715265 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BD9295BAA0900715265 /* AddReview+EX */,
+				9D879BCF295BA71A00715265 /* Cell */,
+				9D879BC6295B96FB00715265 /* View Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D879BC5295B96EB00715265 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		9D879BC6295B96FB00715265 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BC7295B973300715265 /* AddReviewViewController.swift */,
+				9D879BC8295B973300715265 /* AddReviewViewController.xib */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		9D879BCF295BA71A00715265 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BD4295BA74C00715265 /* CommentCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9D879BD4295BA74C00715265 /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BD5295BA76B00715265 /* CommentTableViewCell.swift */,
+				9D879BD6295BA76B00715265 /* CommentTableViewCell.xib */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		9D879BD9295BAA0900715265 /* AddReview+EX */ = {
+			isa = PBXGroup;
+			children = (
+				9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */,
+			);
+			path = "AddReview+EX";
 			sourceTree = "<group>";
 		};
 		9D9D36D52958F71D00A50F24 /* Slider Home */ = {
@@ -476,6 +571,14 @@
 			path = DishesCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		BD9111B517589DC70633FEBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				309245C1694014386B3BC23F /* Pods_Bokhary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -483,9 +586,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D1D25D92958497F0041431D /* Build configuration list for PBXNativeTarget "Bokhary" */;
 			buildPhases = (
+				AEF007A7FEAECCA4B394416E /* [CP] Check Pods Manifest.lock */,
 				9D1D25BE2958497C0041431D /* Sources */,
 				9D1D25BF2958497C0041431D /* Frameworks */,
 				9D1D25C02958497C0041431D /* Resources */,
+				1F6490C40B5A9AA3C6793B3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -547,7 +652,9 @@
 				9DC858DB29589CD800589967 /* MenuViewController.xib in Resources */,
 				9D1D25D52958497F0041431D /* LaunchScreen.storyboard in Resources */,
 				9DBC4BC8295992F200D76C54 /* CategoryCollectionViewCell.xib in Resources */,
+				9D879BD8295BA76B00715265 /* CommentTableViewCell.xib in Resources */,
 				9D1D25ED29586E600041431D /* HomeViewController.xib in Resources */,
+				9D879BCA295B973300715265 /* AddReviewViewController.xib in Resources */,
 				9D1D25D22958497F0041431D /* Assets.xcassets in Resources */,
 				9DBC4BDD2959D8B000D76C54 /* ProductDetailsViewController.xib in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
@@ -556,6 +663,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6490C40B5A9AA3C6793B3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bokhary/Pods-Bokhary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bokhary/Pods-Bokhary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bokhary/Pods-Bokhary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEF007A7FEAECCA4B394416E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bokhary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D1D25BE2958497C0041431D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -563,6 +712,7 @@
 			files = (
 				9D1D25F029587D350041431D /* HomeCollectionViewCell.swift in Sources */,
 				9D1D25E229585CBC0041431D /* BranchesViewController.swift in Sources */,
+				9D879BDB295BAA3700715265 /* AddCmment+EXtension.swift in Sources */,
 				9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */,
 				9DC96A7A295AE743004B80F7 /* ProductTable+EX.swift in Sources */,
 				9D2684D829588D8E005DFB04 /* HomeVC+TableEX.swift in Sources */,
@@ -579,8 +729,10 @@
 				9DC96A81295AEF94004B80F7 /* AditionRemoveTableViewCell.swift in Sources */,
 				9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */,
 				9DC96A91295B31C4004B80F7 /* NotesTableViewCell.swift in Sources */,
+				9D879BC9295B973300715265 /* AddReviewViewController.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 				9D1D25F329587E850041431D /* HomeViewController+EX.swift in Sources */,
+				9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */,
 				9DC96A7C295AEB1E004B80F7 /* ExpandingModel.swift in Sources */,
 				9D1D25EC29586E600041431D /* HomeViewController.swift in Sources */,
 				9DBC4BC7295992F200D76C54 /* CategoryCollectionViewCell.swift in Sources */,
@@ -726,6 +878,7 @@
 		};
 		9D1D25DA2958497F0041431D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C947F9D45E436BF2C3429F4 /* Pods-Bokhary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -753,6 +906,7 @@
 		};
 		9D1D25DB2958497F0041431D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C9B051205356EB34903564 /* Pods-Bokhary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

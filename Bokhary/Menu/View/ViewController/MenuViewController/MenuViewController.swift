@@ -93,13 +93,14 @@ class MenuViewController: UIViewController {
     @IBAction func CollectionStyle(_ sender: Any) {
         
         isChanged = true
+        contentCollectionview.reloadData()
         print("tapped")
     }
     
     @IBAction func RowsStyle(_ sender: Any) {
         
         isChanged = false
-
+        contentCollectionview.reloadData()
     }
     
 }

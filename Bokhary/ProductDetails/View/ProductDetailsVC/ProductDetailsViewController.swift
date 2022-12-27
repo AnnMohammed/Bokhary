@@ -30,8 +30,12 @@ class ProductDetailsViewController: UIViewController {
             productDetailTableView.register(UINib(nibName: "AdditionRemoveTitleCell", bundle: nil), forCellReuseIdentifier: "AdditionRemoveTitleCell")
             productDetailTableView.register(UINib(nibName: "NotesTableViewCell", bundle: nil), forCellReuseIdentifier: "NotesTableViewCell")
             productDetailTableView.register(UINib(nibName: "RelateddishesTableViewCell", bundle: nil), forCellReuseIdentifier: "RelateddishesTableViewCell")
+            productDetailTableView.rowHeight = UITableView.automaticDimension
+            productDetailTableView.estimatedRowHeight = 44
+            
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

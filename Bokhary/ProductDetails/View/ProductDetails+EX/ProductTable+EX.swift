@@ -36,6 +36,16 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
                 
                 let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
                 
+                if sections[indexPath.section].isOpened {
+                    
+                    cellA.expandableImage.image = UIImage(named: "down Arrow")
+                    
+                }else {
+                    
+                    cellA.expandableImage.image = UIImage(named: "topArrow")
+                    
+                }
+                
                 return cellA
             }else{
                 
@@ -56,6 +66,16 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
                 
                 let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
                 
+                if sections[indexPath.section].isOpened {
+                    
+                    cellA.expandableImage.image = UIImage(named: "down Arrow")
+                    
+                }else {
+                    
+                    cellA.expandableImage.image = UIImage(named: "topArrow")
+                    
+                }
+                
                 return cellA
                 
             }else {
@@ -63,10 +83,7 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
                 let cellB = tableView.dequeueReusableCell(withIdentifier: "AditionRemoveTableViewCell", for: indexPath) as! AditionRemoveTableViewCell
                 return cellB
             }
-            
         }
-        
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -75,8 +92,17 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
         
         if indexPath.row == 0 {
             
-            cellA.expandableImage.image = UIImage(named: "down Arrow")
             sections[indexPath.section].isOpened = !sections[indexPath.section].isOpened
+            
+            if sections[indexPath.section].isOpened {
+                
+                cellA.expandableImage.image = UIImage(named: "down Arrow")
+                
+            }else {
+                
+                cellA.expandableImage.image = UIImage(named: "topArrow")
+                
+            }
             
             tableView.reloadSections([indexPath.section], with: .none)
             
@@ -87,5 +113,5 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
         }
         
     }
-
+    
 }

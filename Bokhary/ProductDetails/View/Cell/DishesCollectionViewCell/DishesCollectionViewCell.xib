@@ -42,7 +42,7 @@
                 <constraint firstItem="L7q-G0-tVg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xDS-7v-16v"/>
             </constraints>
             <connections>
-                <outlet property="relatedDishesImg" destination="R4r-6E-xSq" id="Dmt-bj-8tY"/>
+                <outlet property="relatedDishesIMg" destination="R4r-6E-xSq" id="VHG-lM-aU7"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </collectionViewCell>
