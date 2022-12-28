@@ -99,6 +99,44 @@ extension MoreViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         moreTableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.section {
+        case 2 :
+            switch indexPath.row {
+            case 0:
+                break  // Go to Cart
+            case 1:
+                break   // Go to My Orders
+            case 2:
+                break   // Go to My Favorites
+            case 3:
+                break   // Go to My Profile
+            case 4:
+                break   // Go to Contact Us
+            case 5:
+                break   // Go to About Us
+            default:
+                break
+            }
+        case 3:
+            switch indexPath.row {
+            case 0:
+                break   // Go to Complaints and suggestions
+            case 1:
+                break   // Go to  Terms and conditions
+            case 2:
+                break   // Go to Privacy Policy
+            case 3:
+                break   // Go to Technical support
+            case 4:
+                break   // Go to language
+            case 5:
+                break   // Log Out
+            default:
+                break
+            }
+        default:
+            break
+        }
     }
     @objc func homeSectionButtonTapped() {
         // Go To HOME VC

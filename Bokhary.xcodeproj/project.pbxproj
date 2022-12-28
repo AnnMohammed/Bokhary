@@ -56,6 +56,14 @@
 		A69F3D86295C41BD00411608 /* MoreTabelVewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69F3D84295C41BD00411608 /* MoreTabelVewCell.xib */; };
 		A69F3D8A295C63A500411608 /* MoreSectionHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69F3D88295C63A500411608 /* MoreSectionHeaderCell.swift */; };
 		A69F3D8B295C63A500411608 /* MoreSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A69F3D89295C63A500411608 /* MoreSectionHeaderCell.xib */; };
+		A6ABF6CB295C870E00648EAF /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6C9295C870E00648EAF /* AboutUsViewController.swift */; };
+		A6ABF6CC295C870E00648EAF /* AboutUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ABF6CA295C870E00648EAF /* AboutUsViewController.xib */; };
+		A6ABF6D2295C89FF00648EAF /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6D0295C89FF00648EAF /* ContactUsViewController.swift */; };
+		A6ABF6D3295C89FF00648EAF /* ContactUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ABF6D1295C89FF00648EAF /* ContactUsViewController.xib */; };
+		A6ABF6D7295C8A5900648EAF /* ContactUsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6D6295C8A5900648EAF /* ContactUsViewModel.swift */; };
+		A6ABF6DB295C8BCE00648EAF /* ContactUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6D9295C8BCE00648EAF /* ContactUsTableViewCell.swift */; };
+		A6ABF6DC295C8BCE00648EAF /* ContactUsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ABF6DA295C8BCE00648EAF /* ContactUsTableViewCell.xib */; };
+		A6ABF6DE295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6DD295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift */; };
 		A6B35484295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */; };
 		A6B35485295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */; };
 		A6B3548D295C36CE007BA8CE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3548B295C36CE007BA8CE /* NotificationsViewController.swift */; };
@@ -127,6 +135,14 @@
 		A69F3D84295C41BD00411608 /* MoreTabelVewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTabelVewCell.xib; sourceTree = "<group>"; };
 		A69F3D88295C63A500411608 /* MoreSectionHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSectionHeaderCell.swift; sourceTree = "<group>"; };
 		A69F3D89295C63A500411608 /* MoreSectionHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreSectionHeaderCell.xib; sourceTree = "<group>"; };
+		A6ABF6C9295C870E00648EAF /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		A6ABF6CA295C870E00648EAF /* AboutUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AboutUsViewController.xib; path = ../Controller/AboutUsViewController.xib; sourceTree = "<group>"; };
+		A6ABF6D0295C89FF00648EAF /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		A6ABF6D1295C89FF00648EAF /* ContactUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsViewController.xib; sourceTree = "<group>"; };
+		A6ABF6D6295C8A5900648EAF /* ContactUsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewModel.swift; sourceTree = "<group>"; };
+		A6ABF6D9295C8BCE00648EAF /* ContactUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewCell.swift; sourceTree = "<group>"; };
+		A6ABF6DA295C8BCE00648EAF /* ContactUsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsTableViewCell.xib; sourceTree = "<group>"; };
+		A6ABF6DD295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactUsViewController+TableViewExt.swift"; sourceTree = "<group>"; };
 		A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryLocationMapViewController.swift; sourceTree = "<group>"; };
 		A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryLocationMapViewController.xib; sourceTree = "<group>"; };
 		A6B3548B295C36CE007BA8CE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +203,8 @@
 				A61E24C9295B1A850023CFE6 /* Delivery Location Map */,
 				A6B35486295C3666007BA8CE /* Notifications */,
 				A69F3D75295C3D5800411608 /* More */,
+				A69F3D8C295C86B900411608 /* About US */,
+				A6ABF6CD295C898C00648EAF /* Contact Us */,
 				A653C9F92958786700B8DF52 /* Extentions */,
 				9D1D25D12958497F0041431D /* Assets.xcassets */,
 				A653C9EC29585C0600B8DF52 /* Colors.xcassets */,
@@ -571,6 +589,84 @@
 			path = MoreSectionHeaderCell;
 			sourceTree = "<group>";
 		};
+		A69F3D8C295C86B900411608 /* About US */ = {
+			isa = PBXGroup;
+			children = (
+				A69F3D8E295C86CD00411608 /* View */,
+				A69F3D8D295C86C500411608 /* Controller */,
+			);
+			path = "About US";
+			sourceTree = "<group>";
+		};
+		A69F3D8D295C86C500411608 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6C9295C870E00648EAF /* AboutUsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A69F3D8E295C86CD00411608 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6CA295C870E00648EAF /* AboutUsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6ABF6CD295C898C00648EAF /* Contact Us */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6D5295C8A4900648EAF /* Model */,
+				A6ABF6D4295C8A4100648EAF /* ViewModel */,
+				A6ABF6CF295C89B700648EAF /* View */,
+				A6ABF6CE295C89A500648EAF /* Controller */,
+			);
+			path = "Contact Us";
+			sourceTree = "<group>";
+		};
+		A6ABF6CE295C89A500648EAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6D0295C89FF00648EAF /* ContactUsViewController.swift */,
+				A6ABF6DD295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift */,
+				A6ABF6D8295C8BAD00648EAF /* ContactUsTableViewCell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6ABF6CF295C89B700648EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6D1295C89FF00648EAF /* ContactUsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6ABF6D4295C8A4100648EAF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6D6295C8A5900648EAF /* ContactUsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A6ABF6D5295C8A4900648EAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6ABF6D8295C8BAD00648EAF /* ContactUsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6D9295C8BCE00648EAF /* ContactUsTableViewCell.swift */,
+				A6ABF6DA295C8BCE00648EAF /* ContactUsTableViewCell.xib */,
+			);
+			path = ContactUsTableViewCell;
+			sourceTree = "<group>";
+		};
 		A6B35486295C3666007BA8CE /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -771,6 +867,7 @@
 			files = (
 				A6B3548E295C36CE007BA8CE /* NotificationsViewController.xib in Resources */,
 				A6377433295A36B50072D076 /* PaymentMethodsCollectionViewCell.xib in Resources */,
+				A6ABF6DC295C8BCE00648EAF /* ContactUsTableViewCell.xib in Resources */,
 				A69F3D7D295C3DAA00411608 /* MoreViewController.xib in Resources */,
 				A6765EC22958D6D800C0DFDC /* NoAddressViewController.xib in Resources */,
 				A6377427295A26610072D076 /* AddressDetailsTableViewCell.xib in Resources */,
@@ -787,10 +884,12 @@
 				A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */,
 				A6B35497295C384D007BA8CE /* NotificationTableViewCell.xib in Resources */,
 				A69F3D8B295C63A500411608 /* MoreSectionHeaderCell.xib in Resources */,
+				A6ABF6D3295C89FF00648EAF /* ContactUsViewController.xib in Resources */,
 				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
 				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
 				A6405CB02959A1780057F530 /* SelectAddressTableViewCell.xib in Resources */,
 				9D1D25D22958497F0041431D /* Assets.xcassets in Resources */,
+				A6ABF6CC295C870E00648EAF /* AboutUsViewController.xib in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
 				A6EB66F5295A1B92002E74E6 /* ItemTableViewCell.xib in Resources */,
 				A6BB19ED2959AE0300145B4A /* AddAddressViewController.xib in Resources */,
@@ -807,7 +906,9 @@
 				A6B35496295C384D007BA8CE /* NotificationTableViewCell.swift in Sources */,
 				A637742E295A36650072D076 /* PaymentMethodsTableViewCell+CollectionViewExt.swift in Sources */,
 				A653C9EF29586B3B00B8DF52 /* CartViewController+TableViewExt.swift in Sources */,
+				A6ABF6D7295C8A5900648EAF /* ContactUsViewModel.swift in Sources */,
 				A69F3D8A295C63A500411608 /* MoreSectionHeaderCell.swift in Sources */,
+				A6ABF6CB295C870E00648EAF /* AboutUsViewController.swift in Sources */,
 				A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */,
 				A61E24C3295B104F0023CFE6 /* SelectAndAddAddressViewController.swift in Sources */,
 				A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */,
@@ -815,9 +916,11 @@
 				A653C9F129586B5600B8DF52 /* CartViewController+CollectionViewExt.swift in Sources */,
 				A61E24C6295B106F0023CFE6 /* SelectAndAddAddressViewModel.swift in Sources */,
 				A6765EC12958D6D800C0DFDC /* NoAddressViewController.swift in Sources */,
+				A6ABF6DB295C8BCE00648EAF /* ContactUsTableViewCell.swift in Sources */,
 				A6377432295A36B50072D076 /* PaymentMethodsCollectionViewCell.swift in Sources */,
 				9D1D25D02958497C0041431D /* Bokhary.xcdatamodeld in Sources */,
 				A61E24C8295B120E0023CFE6 /* SelectAndAddAddressViewController+TableViewExt.swift in Sources */,
+				A6ABF6DE295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift in Sources */,
 				A69F3D7C295C3DAA00411608 /* MoreViewController.swift in Sources */,
 				A6BB19E52959A94300145B4A /* SelectAddressViewController+TableViewExt.swift in Sources */,
 				A6BB19EC2959AE0300145B4A /* AddAddressViewController.swift in Sources */,
@@ -845,6 +948,7 @@
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 				A69F3D85295C41BD00411608 /* MoreTabelVewCell.swift in Sources */,
 				A69F3D7F295C3E0400411608 /* MoreViewModel.swift in Sources */,
+				A6ABF6D2295C89FF00648EAF /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
