@@ -30,7 +30,7 @@ class SelectAndAddAddressViewController: UIViewController {
     }
     func navBarConfig() {
         navigationController?.navigationBar.backgroundColor = UIColor(named: "Primary")
-        navigationItem.title = "Check Out"
+        navigationItem.title = "Select Address"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(barButtonTapped))
         self.navigationController?.navigationBar.tintColor = UIColor(named: "CartColor")
     }

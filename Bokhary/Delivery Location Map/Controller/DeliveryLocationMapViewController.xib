@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DeliveryLocationMapViewController" customModule="Bokhary" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmAddressButtonOutlet" destination="6Xk-j9-k9Y" id="AaZ-Ot-8Z8"/>
+                <outlet property="mapView" destination="OEL-L8-kSb" id="L8F-si-sZn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-L8-kSb">
+                    <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                    <standardMapConfiguration key="preferredConfiguration"/>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xk-j9-k9Y">
+                    <rect key="frame" x="15" y="802" width="384" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Confirm Address">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="confirmAddressButtonAction:" destination="-1" eventType="touchUpInside" id="LpT-GP-0CZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Primary"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OEL-L8-kSb" secondAttribute="bottom" constant="-34" id="4U4-4J-I53"/>
+                <constraint firstItem="OEL-L8-kSb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZbP-Hv-Dkk"/>
+                <constraint firstItem="OEL-L8-kSb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rg0-cW-Frx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OEL-L8-kSb" secondAttribute="trailing" id="zOJ-jM-xX9"/>
+            </constraints>
+            <point key="canvasLocation" x="-27.536231884057973" y="19.419642857142858"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Primary">
+            <color red="0.9179999828338623" green="0.82700002193450928" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
