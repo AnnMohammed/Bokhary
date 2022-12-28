@@ -57,33 +57,41 @@ extension MoreViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             return 0
         case 2:
-            if moreViewModel.myAccountSectionIsHidden == true {
-                return 6
-            } else {
+                if moreViewModel.myAccountSectionIsHidden == true {
+                    return 6
+                } else {
+                    return 0
+                }
+            case 3:
+                if moreViewModel.settingsSectionIsHidden == true {
+                    return 6
+                } else {
+                    return 0
+                }
+            default:
                 return 0
             }
-        case 3:
-            if moreViewModel.settingsSectionIsHidden == true {
-                return 6
-            } else {
-                return 0
-            }
-        default:
-            return 0
         }
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = moreTableView.dequeueReusableCell(withIdentifier: moreViewModel.moreTabelVewCellID, for: indexPath) as! MoreTabelVewCell
-        switch indexPath.section {
-        case 2:
-            cell.moreOptionNameLabel.text = moreViewModel.myAccountSectionOptionsNames[indexPath.row]
-            cell.moreOptionImageView.image = UIImage(named: moreViewModel.myAccountSectionOptionsNames[indexPath.row])
-        case 3:
-            cell.moreOptionNameLabel.text = moreViewModel.settingsSectionoptionsNames[indexPath.row]
-            cell.moreOptionImageView.image = UIImage(named: moreViewModel.settingsSectionoptionsNames[indexPath.row])
-//            if indexPath.row == 5 {
-//                cell.moreOptionNameLabel.font = .systemFont(ofSize: 14, weight: .bold)
-//            }
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = moreTableView.dequeueReusableCell(withIdentifier: moreViewModel.moreTabelVewCellID, for: indexPath) as! MoreTabelVewCell
+            switch indexPath.section {
+            case 0:
+                break
+            case 1:
+                break
+            case 2:
+                cell.moreOptionNameLabel.text = moreViewModel.myAccountSectionOptionsNames[indexPath.row]
+                cell.moreOptionImageView.image = UIImage(named: moreViewModel.myAccountSectionOptionsNames[indexPath.row])
+                cell.moreOptionNameLabel.font = .systemFont(ofSize: 14, weight: .regular)
+            case 3:
+                cell.moreOptionNameLabel.text = moreViewModel.settingsSectionoptionsNames[indexPath.row]
+                cell.moreOptionImageView.image = UIImage(named: moreViewModel.settingsSectionoptionsNames[indexPath.row])
+                switch indexPath.row {
+                case 5:
+                    cell.moreOptionNameLabel.font = .systemFont(ofSize: 14, weight: .bold)
+                default:
+                    cell.moreOptionNameLabel.font = .systemFont(ofSize: 14, weight: .regular)
+                }
         default:
             break
         }

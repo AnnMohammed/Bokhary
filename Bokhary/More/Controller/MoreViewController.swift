@@ -32,7 +32,11 @@ class MoreViewController: UIViewController {
         moreTableView.dataSource = self
         moreTableView.register(UINib(nibName: moreViewModel.moreTabelVewCellID, bundle: .main), forCellReuseIdentifier: moreViewModel.moreTabelVewCellID)
         moreTableView.register(UINib(nibName: moreViewModel.moreSectionHeaderCellID, bundle: .main), forCellReuseIdentifier: moreViewModel.moreSectionHeaderCellID)
+        moreTableView.reloadData()
     }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        .lightContent
+//    }
     func navBarConfig() {
         navigationController?.navigationBar.backgroundColor = UIColor(named: "Primary")
         navigationItem.title = "More"
