@@ -64,6 +64,8 @@
 		A6ABF6DB295C8BCE00648EAF /* ContactUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6D9295C8BCE00648EAF /* ContactUsTableViewCell.swift */; };
 		A6ABF6DC295C8BCE00648EAF /* ContactUsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ABF6DA295C8BCE00648EAF /* ContactUsTableViewCell.xib */; };
 		A6ABF6DE295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6DD295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift */; };
+		A6ABF6E4295C99C600648EAF /* TechnicalSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6ABF6E2295C99C600648EAF /* TechnicalSupportViewController.swift */; };
+		A6ABF6E5295C99C600648EAF /* TechnicalSupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6ABF6E3295C99C600648EAF /* TechnicalSupportViewController.xib */; };
 		A6B35484295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */; };
 		A6B35485295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */; };
 		A6B3548D295C36CE007BA8CE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B3548B295C36CE007BA8CE /* NotificationsViewController.swift */; };
@@ -143,6 +145,8 @@
 		A6ABF6D9295C8BCE00648EAF /* ContactUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsTableViewCell.swift; sourceTree = "<group>"; };
 		A6ABF6DA295C8BCE00648EAF /* ContactUsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactUsTableViewCell.xib; sourceTree = "<group>"; };
 		A6ABF6DD295C8E0900648EAF /* ContactUsViewController+TableViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactUsViewController+TableViewExt.swift"; sourceTree = "<group>"; };
+		A6ABF6E2295C99C600648EAF /* TechnicalSupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnicalSupportViewController.swift; sourceTree = "<group>"; };
+		A6ABF6E3295C99C600648EAF /* TechnicalSupportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TechnicalSupportViewController.xib; sourceTree = "<group>"; };
 		A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryLocationMapViewController.swift; sourceTree = "<group>"; };
 		A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryLocationMapViewController.xib; sourceTree = "<group>"; };
 		A6B3548B295C36CE007BA8CE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				A69F3D75295C3D5800411608 /* More */,
 				A69F3D8C295C86B900411608 /* About US */,
 				A6ABF6CD295C898C00648EAF /* Contact Us */,
+				A6ABF6DF295C998E00648EAF /* Technical support */,
 				A653C9F92958786700B8DF52 /* Extentions */,
 				9D1D25D12958497F0041431D /* Assets.xcassets */,
 				A653C9EC29585C0600B8DF52 /* Colors.xcassets */,
@@ -667,6 +672,31 @@
 			path = ContactUsTableViewCell;
 			sourceTree = "<group>";
 		};
+		A6ABF6DF295C998E00648EAF /* Technical support */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6E1295C99A000648EAF /* View */,
+				A6ABF6E0295C999600648EAF /* Controller */,
+			);
+			path = "Technical support";
+			sourceTree = "<group>";
+		};
+		A6ABF6E0295C999600648EAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6E2295C99C600648EAF /* TechnicalSupportViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6ABF6E1295C99A000648EAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6ABF6E3295C99C600648EAF /* TechnicalSupportViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A6B35486295C3666007BA8CE /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
@@ -884,6 +914,7 @@
 				A61E24B8295AFD720023CFE6 /* PlaceOrderButtonTableViewCell.xib in Resources */,
 				A6B35497295C384D007BA8CE /* NotificationTableViewCell.xib in Resources */,
 				A69F3D8B295C63A500411608 /* MoreSectionHeaderCell.xib in Resources */,
+				A6ABF6E5295C99C600648EAF /* TechnicalSupportViewController.xib in Resources */,
 				A6ABF6D3295C89FF00648EAF /* ContactUsViewController.xib in Resources */,
 				A6765EB92958B21F00C0DFDC /* SectionHeaderCell.xib in Resources */,
 				A653C9ED29585C0600B8DF52 /* Colors.xcassets in Resources */,
@@ -909,6 +940,7 @@
 				A6ABF6D7295C8A5900648EAF /* ContactUsViewModel.swift in Sources */,
 				A69F3D8A295C63A500411608 /* MoreSectionHeaderCell.swift in Sources */,
 				A6ABF6CB295C870E00648EAF /* AboutUsViewController.swift in Sources */,
+				A6ABF6E4295C99C600648EAF /* TechnicalSupportViewController.swift in Sources */,
 				A653C9FB29587F2200B8DF52 /* UIView+Ext.swift in Sources */,
 				A61E24C3295B104F0023CFE6 /* SelectAndAddAddressViewController.swift in Sources */,
 				A6765EB82958B21F00C0DFDC /* SectionHeaderCell.swift in Sources */,
