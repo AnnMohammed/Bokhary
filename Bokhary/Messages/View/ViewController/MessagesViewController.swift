@@ -8,7 +8,7 @@
 import UIKit
 
 class MessagesViewController: UIViewController {
-
+    
     @IBOutlet weak var messageTableView: UITableView!{
         
         didSet {
@@ -16,34 +16,46 @@ class MessagesViewController: UIViewController {
             messageTableView.delegate = self
             messageTableView.dataSource = self
             messageTableView.register(UINib(nibName: "MessagesTableViewCell", bundle: nil), forCellReuseIdentifier: "MessagesTableViewCell")
-            messageTableView.separatorStyle = .singleLine
+            
+            let frame = CGRect(x: 0, y: 0, width: messageTableView.frame.size.width, height: 1)
+            messageTableView.tableFooterView = UIView(frame: frame)
+            messageTableView.tableHeaderView = UIView(frame: frame)
+            
         }
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setNavigation()
         
         messageTableView.rowHeight = 80
         messageTableView.estimatedRowHeight = UITableView.automaticDimension
+        
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.layoutIfNeeded()
+        
+    }
+    
     func setNavigation() {
         
-        title = "Favorite"
+        title = "Messages"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
         
-        messageTableView.separatorStyle = .none
     }
-        
+    
     @objc func addTapped(){
         
         print("cart Tapped")
     }
     
-    }
+}
 
 

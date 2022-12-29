@@ -24,9 +24,9 @@ class TrackOrderTableViewCell: UITableViewCell {
     
     func stylingView() {
         
-        trackingView.layer.borderColor = UIColor.white.cgColor
-        trackingView.layer.cornerRadius = 20
-        trackingView.layer.borderWidth = 1
+//        trackingView.layer.borderColor = UIColor.white.cgColor
+        trackingView.layer.cornerRadius = 24
+//        trackingView.layer.borderWidth = 1
         
     }
     

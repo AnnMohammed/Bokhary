@@ -52,6 +52,12 @@
 		9D9D36DC2958F8FE00A50F24 /* SliderHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */; };
 		9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */; };
 		9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */; };
+		9DADDCDE295CF90B000F53C6 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCDC295CF90B000F53C6 /* MenuCollectionViewCell.swift */; };
+		9DADDCDF295CF90B000F53C6 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DADDCDD295CF90B000F53C6 /* MenuCollectionViewCell.xib */; };
+		9DADDCE1295CFB27000F53C6 /* MenuCollection+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCE0295CFB27000F53C6 /* MenuCollection+EX.swift */; };
+		9DADDCE9295D0206000F53C6 /* TrackOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCE7295D0206000F53C6 /* TrackOrderViewController.swift */; };
+		9DADDCEA295D0206000F53C6 /* TrackOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DADDCE8295D0206000F53C6 /* TrackOrderViewController.xib */; };
+		9DADDCEC295D0592000F53C6 /* Designable+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCEB295D0592000F53C6 /* Designable+EX.swift */; };
 		9DBC4BC7295992F200D76C54 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC4BC5295992F200D76C54 /* CategoryCollectionViewCell.swift */; };
 		9DBC4BC8295992F200D76C54 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DBC4BC6295992F200D76C54 /* CategoryCollectionViewCell.xib */; };
 		9DBC4BCC2959950100D76C54 /* MenuCollection+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBC4BCB2959950100D76C54 /* MenuCollection+Ex.swift */; };
@@ -124,6 +130,12 @@
 		9D9D36DA2958F8FE00A50F24 /* SliderHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderHomeTableViewCell.swift; sourceTree = "<group>"; };
 		9D9D36DB2958F8FE00A50F24 /* SliderHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderHomeTableViewCell.xib; sourceTree = "<group>"; };
 		9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EX.swift"; sourceTree = "<group>"; };
+		9DADDCDC295CF90B000F53C6 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		9DADDCDD295CF90B000F53C6 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		9DADDCE0295CFB27000F53C6 /* MenuCollection+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuCollection+EX.swift"; sourceTree = "<group>"; };
+		9DADDCE7295D0206000F53C6 /* TrackOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackOrderViewController.swift; sourceTree = "<group>"; };
+		9DADDCE8295D0206000F53C6 /* TrackOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackOrderViewController.xib; sourceTree = "<group>"; };
+		9DADDCEB295D0592000F53C6 /* Designable+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Designable+EX.swift"; sourceTree = "<group>"; };
 		9DBC4BC5295992F200D76C54 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DBC4BC6295992F200D76C54 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		9DBC4BCB2959950100D76C54 /* MenuCollection+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuCollection+Ex.swift"; sourceTree = "<group>"; };
@@ -190,6 +202,7 @@
 		9D1D25C42958497C0041431D /* Bokhary */ = {
 			isa = PBXGroup;
 			children = (
+				9DADDCE2295D01A5000F53C6 /* Track Order */,
 				9D98C034295C89C900032EDD /* Messages */,
 				9D98C021295C776800032EDD /* FavoriteScreen */,
 				9D98C001295C4AB300032EDD /* CartOrders */,
@@ -411,6 +424,7 @@
 		9D98C00A295C500100032EDD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9DADDCDB295CF8D2000F53C6 /* MenuCell */,
 				9D98C01C295C6A0800032EDD /* PaymentSymaryCell */,
 				9D98C017295C627B00032EDD /* TrackOrderCell */,
 				9D98C00B295C555A00032EDD /* orders cell */,
@@ -431,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				9D98C015295C5CE300032EDD /* OrdersView+Ex.swift */,
+				9DADDCE0295CFB27000F53C6 /* MenuCollection+EX.swift */,
 			);
 			path = "ordersView+EX";
 			sourceTree = "<group>";
@@ -532,9 +547,9 @@
 		9D98C034295C89C900032EDD /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				9D98C035295C89FC00032EDD /* Model */,
 				9D98C037295C8A0E00032EDD /* View Model */,
 				9D98C036295C8A0600032EDD /* View */,
-				9D98C035295C89FC00032EDD /* Model */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -645,8 +660,59 @@
 			isa = PBXGroup;
 			children = (
 				9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */,
+				9DADDCEB295D0592000F53C6 /* Designable+EX.swift */,
 			);
 			path = EXtension;
+			sourceTree = "<group>";
+		};
+		9DADDCDB295CF8D2000F53C6 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DADDCDC295CF90B000F53C6 /* MenuCollectionViewCell.swift */,
+				9DADDCDD295CF90B000F53C6 /* MenuCollectionViewCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
+		9DADDCE2295D01A5000F53C6 /* Track Order */ = {
+			isa = PBXGroup;
+			children = (
+				9DADDCE5295D01BD000F53C6 /* View Mode */,
+				9DADDCE4295D01B6000F53C6 /* View */,
+				9DADDCE3295D01B0000F53C6 /* Model */,
+			);
+			path = "Track Order";
+			sourceTree = "<group>";
+		};
+		9DADDCE3295D01B0000F53C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9DADDCE4295D01B6000F53C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9DADDCE6295D01CB000F53C6 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9DADDCE5295D01BD000F53C6 /* View Mode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Mode";
+			sourceTree = "<group>";
+		};
+		9DADDCE6295D01CB000F53C6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DADDCE7295D0206000F53C6 /* TrackOrderViewController.swift */,
+				9DADDCE8295D0206000F53C6 /* TrackOrderViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		9DBC4BC4295992AE00D76C54 /* Category Collection Cell */ = {
@@ -919,6 +985,7 @@
 				9D1D25E329585CBC0041431D /* BranchesViewController.xib in Resources */,
 				9D2684E629589340005DFB04 /* HomeTableViewCell.xib in Resources */,
 				9DC96A97295B3D08004B80F7 /* RelateddishesTableViewCell.xib in Resources */,
+				9DADDCDF295CF90B000F53C6 /* MenuCollectionViewCell.xib in Resources */,
 				9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */,
 				9DC96A82295AEF94004B80F7 /* AditionRemoveTableViewCell.xib in Resources */,
 				9D98C020295C6A3200032EDD /* PaymentSymarryTableViewCell.xib in Resources */,
@@ -935,6 +1002,7 @@
 				9D879BCA295B973300715265 /* AddReviewViewController.xib in Resources */,
 				9D1D25D22958497F0041431D /* Assets.xcassets in Resources */,
 				9DBC4BDD2959D8B000D76C54 /* ProductDetailsViewController.xib in Resources */,
+				9DADDCEA295D0206000F53C6 /* TrackOrderViewController.xib in Resources */,
 				9D98C02F295C783400032EDD /* FavoriteTableViewCell.xib in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
 				9D98C009295C4CF800032EDD /* OrdersViewController.xib in Resources */,
@@ -1002,12 +1070,14 @@
 				9DC96A7A295AE743004B80F7 /* ProductTable+EX.swift in Sources */,
 				9D2684D829588D8E005DFB04 /* HomeVC+TableEX.swift in Sources */,
 				9D98C016295C5CE300032EDD /* OrdersView+Ex.swift in Sources */,
+				9DADDCE1295CFB27000F53C6 /* MenuCollection+EX.swift in Sources */,
 				9DC858DA29589CD800589967 /* MenuViewController.swift in Sources */,
 				9DBC4BD12959B42300D76C54 /* ContentColeectionViewCell.swift in Sources */,
 				9DC96A96295B3D08004B80F7 /* RelateddishesTableViewCell.swift in Sources */,
 				9DC96A9B295B3EF9004B80F7 /* DishesCollectionViewCell.swift in Sources */,
 				9DBC4BCC2959950100D76C54 /* MenuCollection+Ex.swift in Sources */,
 				9D1D25CA2958497C0041431D /* ViewController.swift in Sources */,
+				9DADDCDE295CF90B000F53C6 /* MenuCollectionViewCell.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
 				9DBC4BDC2959D8B000D76C54 /* ProductDetailsViewController.swift in Sources */,
 				9D2684E529589340005DFB04 /* HomeTableViewCell.swift in Sources */,
@@ -1017,6 +1087,7 @@
 				9D98C03F295C8CCE00032EDD /* MessagesVC+EX.swift in Sources */,
 				9D98C028295C77BE00032EDD /* FavoriteViewController.swift in Sources */,
 				9D98C02E295C783400032EDD /* FavoriteTableViewCell.swift in Sources */,
+				9DADDCEC295D0592000F53C6 /* Designable+EX.swift in Sources */,
 				9DC96A91295B31C4004B80F7 /* NotesTableViewCell.swift in Sources */,
 				9D98C033295C7AF800032EDD /* FavoriteVC+EX.swift in Sources */,
 				9D879BC9295B973300715265 /* AddReviewViewController.swift in Sources */,
@@ -1025,6 +1096,7 @@
 				9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */,
 				9D98C03B295C8A3F00032EDD /* MessagesViewController.swift in Sources */,
 				9DC96A7C295AEB1E004B80F7 /* ExpandingModel.swift in Sources */,
+				9DADDCE9295D0206000F53C6 /* TrackOrderViewController.swift in Sources */,
 				9D98C01F295C6A3200032EDD /* PaymentSymarryTableViewCell.swift in Sources */,
 				9D1D25EC29586E600041431D /* HomeViewController.swift in Sources */,
 				9DBC4BC7295992F200D76C54 /* CategoryCollectionViewCell.swift in Sources */,

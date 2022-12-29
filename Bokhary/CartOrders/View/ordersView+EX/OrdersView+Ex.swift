@@ -39,6 +39,19 @@ extension OrdersViewController : UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.section == 1 {
+            
+            let VC = TrackOrderViewController()
+            VC.modalPresentationStyle = .overCurrentContext
+            VC.modalTransitionStyle = .crossDissolve
+            present(VC, animated: true, completion: nil)
+            
+        }
+        
+    }
+    
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         
         if section == 1 {
@@ -54,15 +67,4 @@ extension OrdersViewController : UITableViewDelegate,UITableViewDataSource {
         }
     }
     
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        if section == 1 {
-            
-            return 160
-            
-        }else {
-            
-            return 0
-            
-        }
-    }
 }

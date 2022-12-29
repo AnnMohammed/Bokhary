@@ -14,6 +14,7 @@ class FavoriteTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        selectionStyle = .none
         stylingViews()
     }
 
@@ -36,9 +37,10 @@ class FavoriteTableViewCell: UITableViewCell {
         favoriteItemImage.layer.cornerRadius = 15
         favoriteItemImage.layer.borderColor = UIColor.black.cgColor
         
-        favoriteCellview.layer.borderWidth = 1
+        favoriteCellview.layer.borderWidth = 0.5
         favoriteCellview.layer.cornerRadius = 15
         favoriteCellview.layer.borderColor = UIColor.init(hexString: "#EAD3B5")?.cgColor
+        
         
     }
     

@@ -19,7 +19,7 @@ class FavoriteViewController: UIViewController {
             
             listOfFavorietsTableView.rowHeight = 120
             listOfFavorietsTableView.estimatedRowHeight = UITableView.automaticDimension
-            
+            listOfFavorietsTableView.separatorStyle = .none
         }
         
     }
@@ -32,8 +32,6 @@ class FavoriteViewController: UIViewController {
         title = "Favorite"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
-        
-        listOfFavorietsTableView.separatorStyle = .none
         
     }
     
