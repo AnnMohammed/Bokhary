@@ -14,7 +14,7 @@ class NoAddressViewController: UIViewController {
         buttonsColors()
     }
     func buttonsColors() {
-        self.addAddressOutlet.applyGradient(colors: [UIButton.UIColorFromRGB(0xB01F22).cgColor,UIButton.UIColorFromRGB(0xD92822).cgColor], num: 20, title: "")
+        self.addAddressOutlet.applyGradient(colors: [UIButton.UIColorFromRGB(0xB01F22).cgColor,UIButton.UIColorFromRGB(0xD92822).cgColor], num: 60, title: "")
         
     }
     @IBAction func addAddressButton(_ sender: UIButton) {

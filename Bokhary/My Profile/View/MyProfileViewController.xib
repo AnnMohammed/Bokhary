@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyProfileViewController" customModule="Bokhary" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteAccountButtonOutlet" destination="h5u-WV-JJW" id="a2W-wF-JKm"/>
+                <outlet property="editProfileButtonOutlet" destination="H87-K2-9EO" id="5WS-wA-BAT"/>
+                <outlet property="myProfileTableView" destination="1Jm-U5-TOi" id="OOj-qZ-zGC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hb1-SM-oBY">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H87-K2-9EO">
+                            <rect key="frame" x="340" y="40" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="5hl-Iy-pVL"/>
+                                <constraint firstAttribute="height" constant="16" id="Fb1-3F-HM8"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Edit-alt"/>
+                            <connections>
+                                <action selector="editProfileButtonAction:" destination="-1" eventType="touchUpInside" id="fks-lx-NZm"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-U5-TOi">
+                            <rect key="frame" x="0.0" y="90" width="393" height="277"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="393" id="Ngh-Ig-pwE"/>
+                                <constraint firstAttribute="height" constant="277" id="zHD-qY-1TD"/>
+                            </constraints>
+                            <color key="separatorColor" name="Secondary"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5u-WV-JJW">
+                            <rect key="frame" x="12" y="465" width="368" height="54"/>
+                            <color key="backgroundColor" name="Red3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="368" id="Niv-1C-CyT"/>
+                                <constraint firstAttribute="height" constant="54" id="SCP-hj-bYx"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Delete account">
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="27"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" name="Red2"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="deleteAccountButtonAction:" destination="-1" eventType="touchUpInside" id="2zQ-QZ-dZD"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="h5u-WV-JJW" secondAttribute="bottom" constant="274" id="0uP-A1-DES"/>
+                        <constraint firstItem="H87-K2-9EO" firstAttribute="top" secondItem="Hb1-SM-oBY" secondAttribute="top" constant="40" id="28c-ES-frp"/>
+                        <constraint firstItem="h5u-WV-JJW" firstAttribute="leading" secondItem="Hb1-SM-oBY" secondAttribute="leading" constant="12" id="3xC-S9-5Fc"/>
+                        <constraint firstAttribute="bottom" secondItem="H87-K2-9EO" secondAttribute="bottom" constant="737" id="4W3-zE-eVJ"/>
+                        <constraint firstAttribute="trailing" secondItem="h5u-WV-JJW" secondAttribute="trailing" constant="13" id="FNX-gP-psL"/>
+                        <constraint firstItem="1Jm-U5-TOi" firstAttribute="top" secondItem="H87-K2-9EO" secondAttribute="bottom" constant="34" id="aWU-ar-rt3"/>
+                        <constraint firstItem="H87-K2-9EO" firstAttribute="leading" secondItem="Hb1-SM-oBY" secondAttribute="leading" constant="340" id="gCy-Vj-fX3"/>
+                        <constraint firstAttribute="trailing" secondItem="1Jm-U5-TOi" secondAttribute="trailing" id="s6I-F3-Tsd"/>
+                        <constraint firstItem="1Jm-U5-TOi" firstAttribute="leading" secondItem="Hb1-SM-oBY" secondAttribute="leading" id="sMp-SO-TV9"/>
+                        <constraint firstAttribute="trailing" secondItem="H87-K2-9EO" secondAttribute="trailing" constant="37" id="wW7-J4-4GV"/>
+                        <constraint firstItem="h5u-WV-JJW" firstAttribute="top" secondItem="1Jm-U5-TOi" secondAttribute="bottom" constant="98" id="yJp-m3-9rD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Primary"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hb1-SM-oBY" secondAttribute="bottom" constant="-34" id="JDN-fC-3j6"/>
+                <constraint firstItem="Hb1-SM-oBY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zsg-wD-yus"/>
+                <constraint firstItem="Hb1-SM-oBY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="seZ-wp-zO7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hb1-SM-oBY" secondAttribute="trailing" id="wMh-EK-ZTP"/>
+            </constraints>
+            <point key="canvasLocation" x="90.839694656488547" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Edit-alt" width="16.666666030883789" height="17.333333969116211"/>
+        <namedColor name="Primary">
+            <color red="0.9179999828338623" green="0.82700002193450928" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red2">
+            <color red="0.68999999761581421" green="0.12200000137090683" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Red3">
+            <color red="0.85100001096725464" green="0.15700000524520874" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary">
+            <color red="0.89399999380111694" green="0.63899999856948853" blue="0.44299998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
