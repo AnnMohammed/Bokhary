@@ -9,6 +9,17 @@ import UIKit
 
 class MessagesViewController: UIViewController {
     
+    @IBOutlet weak var messageatypeCV: UICollectionView! {
+        
+        didSet {
+            
+            messageatypeCV.delegate = self
+            messageatypeCV.dataSource = self
+            messageatypeCV.register(UINib(nibName: "MessageTypeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MessageTypeCollectionViewCell")
+            
+        }
+        
+    }
     @IBOutlet weak var messageTableView: UITableView!{
         
         didSet {
@@ -24,6 +35,9 @@ class MessagesViewController: UIViewController {
         }
         
     }
+    
+    var index = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,11 +50,7 @@ class MessagesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for:.default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.layoutIfNeeded()
-        
+                
     }
     
     func setNavigation() {
