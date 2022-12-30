@@ -23,14 +23,25 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home images" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-88-FHC">
                                 <rect key="frame" x="0.0" y="0.0" width="385" height="220"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamb chops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kE-fZ-pfv">
-                                <rect key="frame" x="19" y="185" width="99.5" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jt2-Yf-xrM">
+                                <rect key="frame" x="19" y="168.5" width="99.5" height="37.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lamb chops" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kE-fZ-pfv">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.00 BHD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6D-i6-jB2">
+                                        <rect key="frame" x="0.0" y="20.5" width="99.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5.00 BHD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-XA-9qz">
-                                <rect key="frame" x="300" y="187" width="66" height="17"/>
+                                <rect key="frame" x="300" y="170.5" width="66" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -39,10 +50,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="FgA-88-FHC" secondAttribute="bottom" id="5TW-r1-IDr"/>
-                            <constraint firstItem="6kE-fZ-pfv" firstAttribute="leading" secondItem="ZQs-UH-Npl" secondAttribute="leading" constant="19" id="B71-x7-fTH"/>
+                            <constraint firstItem="UiC-XA-9qz" firstAttribute="centerY" secondItem="6kE-fZ-pfv" secondAttribute="centerY" id="5jL-Bb-yit"/>
+                            <constraint firstAttribute="bottom" secondItem="Jt2-Yf-xrM" secondAttribute="bottom" constant="14" id="ImX-Zu-cXh"/>
                             <constraint firstAttribute="trailing" secondItem="FgA-88-FHC" secondAttribute="trailing" id="Jih-hz-d5e"/>
-                            <constraint firstAttribute="bottom" secondItem="6kE-fZ-pfv" secondAttribute="bottom" constant="14" id="dpa-A2-aad"/>
-                            <constraint firstItem="UiC-XA-9qz" firstAttribute="centerY" secondItem="6kE-fZ-pfv" secondAttribute="centerY" id="j5q-eb-s5j"/>
+                            <constraint firstItem="Jt2-Yf-xrM" firstAttribute="leading" secondItem="ZQs-UH-Npl" secondAttribute="leading" constant="19" id="c3Q-Cc-IMp"/>
                             <constraint firstItem="FgA-88-FHC" firstAttribute="top" secondItem="ZQs-UH-Npl" secondAttribute="top" id="jQ6-u9-Ksb"/>
                             <constraint firstItem="FgA-88-FHC" firstAttribute="leading" secondItem="ZQs-UH-Npl" secondAttribute="leading" id="oGF-9p-FdK"/>
                             <constraint firstAttribute="trailing" secondItem="UiC-XA-9qz" secondAttribute="trailing" constant="19" id="qJK-3D-Cfe"/>
@@ -60,6 +71,8 @@
             <connections>
                 <outlet property="contentCollectionCellView" destination="ZQs-UH-Npl" id="JPb-md-zWW"/>
                 <outlet property="contentImage" destination="FgA-88-FHC" id="WqL-zm-lS1"/>
+                <outlet property="priceLabelInsideStack" destination="i6D-i6-jB2" id="8XU-Nx-o2U"/>
+                <outlet property="priceLabelOutsideStack" destination="UiC-XA-9qz" id="xc7-X3-BmS"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="112.5"/>
         </collectionViewCell>

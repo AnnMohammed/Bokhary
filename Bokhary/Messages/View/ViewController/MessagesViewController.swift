@@ -32,6 +32,9 @@ class MessagesViewController: UIViewController {
             messageTableView.tableFooterView = UIView(frame: frame)
             messageTableView.tableHeaderView = UIView(frame: frame)
             
+            messageTableView.rowHeight = 80
+            messageTableView.estimatedRowHeight = UITableView.automaticDimension
+            
         }
         
     }
@@ -42,9 +45,6 @@ class MessagesViewController: UIViewController {
         super.viewDidLoad()
         
         setNavigation()
-        
-        messageTableView.rowHeight = 80
-        messageTableView.estimatedRowHeight = UITableView.automaticDimension
         
     }
     

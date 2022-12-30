@@ -9,6 +9,8 @@ import UIKit
 
 class ContentColeectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var priceLabelOutsideStack: UILabel!
+    @IBOutlet weak var priceLabelInsideStack: UILabel!
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var contentCollectionCellView: UIView!
     override func awakeFromNib() {

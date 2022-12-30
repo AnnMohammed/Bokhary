@@ -61,6 +61,19 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
 
             else {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentColeectionViewCell", for: indexPath) as! ContentColeectionViewCell
+                
+                if isChanged {
+                    
+                    cell.priceLabelInsideStack.isHidden = true
+                    cell.priceLabelOutsideStack.isHidden = false
+                    
+                }else {
+                    
+                    cell.priceLabelInsideStack.isHidden = false
+                    cell.priceLabelOutsideStack.isHidden = true
+                    
+                }
+                
                 return cell
 
             }
@@ -76,7 +89,16 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
             }
             else {
                 
-                return CGSize(width: contentCollectionview.frame.width, height: contentCollectionview.frame.height / 3 )
+                if isChanged {
+                    
+                    return CGSize(width: contentCollectionview.frame.size.width, height: 214 )
+                    
+                }else {
+                    
+                    return CGSize(width: (contentCollectionview.frame.size.width - 10) / 2, height: 214 )
+                    
+                }
+                
                 
             }
         

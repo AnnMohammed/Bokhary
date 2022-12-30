@@ -91,6 +91,13 @@
 		9DC96A97295B3D08004B80F7 /* RelateddishesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC96A95295B3D08004B80F7 /* RelateddishesTableViewCell.xib */; };
 		9DC96A9B295B3EF9004B80F7 /* DishesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC96A99295B3EF9004B80F7 /* DishesCollectionViewCell.swift */; };
 		9DC96A9C295B3EF9004B80F7 /* DishesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC96A9A295B3EF9004B80F7 /* DishesCollectionViewCell.xib */; };
+		9DF5F524295F793A00663A73 /* CountriesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F522295F793A00663A73 /* CountriesTableCell.swift */; };
+		9DF5F525295F793A00663A73 /* CountriesTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF5F523295F793A00663A73 /* CountriesTableCell.xib */; };
+		9DF5F52A295F7B5900663A73 /* SignUpTableViewEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F529295F7B5900663A73 /* SignUpTableViewEX.swift */; };
+		9DF5F52C295F800E00663A73 /* FindCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F52B295F800E00663A73 /* FindCountryCode.swift */; };
+		9DF5F52E295F838900663A73 /* GradientColorEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F52D295F838900663A73 /* GradientColorEX.swift */; };
+		9DF5F531295F93E000663A73 /* ForgetPasswordTableViewEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F530295F93E000663A73 /* ForgetPasswordTableViewEX.swift */; };
+		9DF5F534295F97F600663A73 /* LoginVCTableViewEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF5F533295F97F600663A73 /* LoginVCTableViewEX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -181,6 +188,13 @@
 		9DC96A95295B3D08004B80F7 /* RelateddishesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RelateddishesTableViewCell.xib; sourceTree = "<group>"; };
 		9DC96A99295B3EF9004B80F7 /* DishesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DC96A9A295B3EF9004B80F7 /* DishesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishesCollectionViewCell.xib; sourceTree = "<group>"; };
+		9DF5F522295F793A00663A73 /* CountriesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableCell.swift; sourceTree = "<group>"; };
+		9DF5F523295F793A00663A73 /* CountriesTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTableCell.xib; sourceTree = "<group>"; };
+		9DF5F529295F7B5900663A73 /* SignUpTableViewEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpTableViewEX.swift; sourceTree = "<group>"; };
+		9DF5F52B295F800E00663A73 /* FindCountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCountryCode.swift; sourceTree = "<group>"; };
+		9DF5F52D295F838900663A73 /* GradientColorEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColorEX.swift; sourceTree = "<group>"; };
+		9DF5F530295F93E000663A73 /* ForgetPasswordTableViewEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordTableViewEX.swift; sourceTree = "<group>"; };
+		9DF5F533295F97F600663A73 /* LoginVCTableViewEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCTableViewEX.swift; sourceTree = "<group>"; };
 		B9C9B051205356EB34903564 /* Pods-Bokhary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bokhary.release.xcconfig"; path = "Target Support Files/Pods-Bokhary/Pods-Bokhary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,6 +372,7 @@
 		9D7A74BB295DB0A50078F4FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DF5F520295F78D600663A73 /* Cell */,
 				9D7A74BD295DB0B60078F4FF /* ViewController */,
 			);
 			path = View;
@@ -733,6 +748,8 @@
 				9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */,
 				9DADDCEB295D0592000F53C6 /* Designable+EX.swift */,
 				9DB15099295DE35200F389B2 /* NavigationBar+EX.swift */,
+				9DF5F52B295F800E00663A73 /* FindCountryCode.swift */,
+				9DF5F52D295F838900663A73 /* GradientColorEX.swift */,
 			);
 			path = EXtension;
 			sourceTree = "<group>";
@@ -798,6 +815,7 @@
 		9D9E9172295D919600ACDB12 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DF5F532295F97B100663A73 /* LoginVCTableView+EX */,
 				9D9E9174295D91BC00ACDB12 /* ViewController */,
 			);
 			path = View;
@@ -889,6 +907,7 @@
 		9DB15085295DBD9300F389B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DF5F52F295F939400663A73 /* ForgetPasswordVC+EX */,
 				9DB15087295DBDA900F389B2 /* ViewController */,
 			);
 			path = View;
@@ -1114,6 +1133,48 @@
 			path = DishesCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		9DF5F520295F78D600663A73 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9DF5F526295F7AE800663A73 /* SignUpVC+EX */,
+				9DF5F521295F78E000663A73 /* countriesTableCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9DF5F521295F78E000663A73 /* countriesTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				9DF5F522295F793A00663A73 /* CountriesTableCell.swift */,
+				9DF5F523295F793A00663A73 /* CountriesTableCell.xib */,
+			);
+			path = countriesTableCell;
+			sourceTree = "<group>";
+		};
+		9DF5F526295F7AE800663A73 /* SignUpVC+EX */ = {
+			isa = PBXGroup;
+			children = (
+				9DF5F529295F7B5900663A73 /* SignUpTableViewEX.swift */,
+			);
+			path = "SignUpVC+EX";
+			sourceTree = "<group>";
+		};
+		9DF5F52F295F939400663A73 /* ForgetPasswordVC+EX */ = {
+			isa = PBXGroup;
+			children = (
+				9DF5F530295F93E000663A73 /* ForgetPasswordTableViewEX.swift */,
+			);
+			path = "ForgetPasswordVC+EX";
+			sourceTree = "<group>";
+		};
+		9DF5F532295F97B100663A73 /* LoginVCTableView+EX */ = {
+			isa = PBXGroup;
+			children = (
+				9DF5F533295F97F600663A73 /* LoginVCTableViewEX.swift */,
+			);
+			path = "LoginVCTableView+EX";
+			sourceTree = "<group>";
+		};
 		BD9111B517589DC70633FEBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1187,6 +1248,7 @@
 				9D98C029295C77BE00032EDD /* FavoriteViewController.xib in Resources */,
 				9DC96A88295AF4DC004B80F7 /* AdditionRemoveTitleCell.xib in Resources */,
 				9D1D25E329585CBC0041431D /* BranchesViewController.xib in Resources */,
+				9DF5F525295F793A00663A73 /* CountriesTableCell.xib in Resources */,
 				9D2684E629589340005DFB04 /* HomeTableViewCell.xib in Resources */,
 				9DB15096295DDBD900F389B2 /* MessageTypeCollectionViewCell.xib in Resources */,
 				9DC96A97295B3D08004B80F7 /* RelateddishesTableViewCell.xib in Resources */,
@@ -1271,7 +1333,9 @@
 				9D98C012295C560A00032EDD /* ordersTableViewCell.swift in Sources */,
 				9D1D25F029587D350041431D /* HomeCollectionViewCell.swift in Sources */,
 				9D1D25E229585CBC0041431D /* BranchesViewController.swift in Sources */,
+				9DF5F52E295F838900663A73 /* GradientColorEX.swift in Sources */,
 				9D98C044295C8D3300032EDD /* MessagesTableViewCell.swift in Sources */,
+				9DF5F534295F97F600663A73 /* LoginVCTableViewEX.swift in Sources */,
 				9D98C01A295C629B00032EDD /* TrackOrderTableViewCell.swift in Sources */,
 				9D879BDB295BAA3700715265 /* AddCmment+EXtension.swift in Sources */,
 				9D98C008295C4CF800032EDD /* OrdersViewController.swift in Sources */,
@@ -1281,6 +1345,8 @@
 				9D98C016295C5CE300032EDD /* OrdersView+Ex.swift in Sources */,
 				9DB1508A295DBDD800F389B2 /* ForgetPasswordVC.swift in Sources */,
 				9DADDCE1295CFB27000F53C6 /* MenuCollection+EX.swift in Sources */,
+				9DF5F52A295F7B5900663A73 /* SignUpTableViewEX.swift in Sources */,
+				9DF5F524295F793A00663A73 /* CountriesTableCell.swift in Sources */,
 				9DC858DA29589CD800589967 /* MenuViewController.swift in Sources */,
 				9DBC4BD12959B42300D76C54 /* ContentColeectionViewCell.swift in Sources */,
 				9DC96A96295B3D08004B80F7 /* RelateddishesTableViewCell.swift in Sources */,
@@ -1306,6 +1372,7 @@
 				9DB1509A295DE35300F389B2 /* NavigationBar+EX.swift in Sources */,
 				9D879BC9295B973300715265 /* AddReviewViewController.swift in Sources */,
 				9D9E9177295D91D800ACDB12 /* LoginViewController.swift in Sources */,
+				9DF5F52C295F800E00663A73 /* FindCountryCode.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 				9D1D25F329587E850041431D /* HomeViewController+EX.swift in Sources */,
 				9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */,
@@ -1314,6 +1381,7 @@
 				9DADDCE9295D0206000F53C6 /* TrackOrderViewController.swift in Sources */,
 				9D98C01F295C6A3200032EDD /* PaymentSymarryTableViewCell.swift in Sources */,
 				9D1D25EC29586E600041431D /* HomeViewController.swift in Sources */,
+				9DF5F531295F93E000663A73 /* ForgetPasswordTableViewEX.swift in Sources */,
 				9DBC4BC7295992F200D76C54 /* CategoryCollectionViewCell.swift in Sources */,
 				9D9E916E295D8FAB00ACDB12 /* TermsAndConditionsVC.swift in Sources */,
 				9D9D36DC2958F8FE00A50F24 /* SliderHomeTableViewCell.swift in Sources */,

@@ -10,9 +10,11 @@ import UIKit
 class MenuViewController: UIViewController {
     
     // variabels
-    var isChanged = false
+    var isChanged = true
     
     // Outlets
+    @IBOutlet weak var rowStyleButtonOutlet: UIButton!
+    @IBOutlet weak var collectionStyleButtonOutlet: UIButton!
     @IBOutlet weak var contentCollectionview: UICollectionView!
     {
         
@@ -92,15 +94,23 @@ class MenuViewController: UIViewController {
     
     @IBAction func CollectionStyle(_ sender: Any) {
         
-        isChanged = true
+        isChanged = false
         contentCollectionview.reloadData()
         print("tapped")
+        
+        collectionStyleButtonOutlet.setBackgroundImage(UIImage(named: "LayoutSelected"), for: .normal)
+        rowStyleButtonOutlet.setBackgroundImage(UIImage(named: "RowsUnselected"), for: .normal)
+        
     }
     
     @IBAction func RowsStyle(_ sender: Any) {
         
-        isChanged = false
+        isChanged = true
         contentCollectionview.reloadData()
+        
+        rowStyleButtonOutlet.setBackgroundImage(UIImage(named: "Rows"), for: .normal)
+        collectionStyleButtonOutlet.setBackgroundImage(UIImage(named: "Layout"), for: .normal)
+        
     }
     
 }
