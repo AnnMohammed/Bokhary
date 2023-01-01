@@ -30,11 +30,14 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         if indexPath.section == 2 {
             
             if indexPath.row == 0 {
                 
                 let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
+                
+                cellA.itemName.text = " Add any notes"
                 
                 if sections[indexPath.section].isOpened {
                     
@@ -62,32 +65,63 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
             
         }else {
             
-            if indexPath.row == 0 {
-                
-                let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
-                
-                if sections[indexPath.section].isOpened {
+            if indexPath.section == 0 {
+                if indexPath.row == 0 {
                     
-                    cellA.expandableImage.image = UIImage(named: "down Arrow")
+                    let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
+                    
+                    cellA.itemName.text = "Additions"
+                    
+                    if sections[indexPath.section].isOpened {
+                        
+                        cellA.expandableImage.image = UIImage(named: "down Arrow")
+                        
+                    }else {
+                        
+                        cellA.expandableImage.image = UIImage(named: "topArrow")
+                        
+                    }
+                    
+                    return cellA
                     
                 }else {
                     
-                    cellA.expandableImage.image = UIImage(named: "topArrow")
+                    let cellB = tableView.dequeueReusableCell(withIdentifier: "AditionRemoveTableViewCell", for: indexPath) as! AditionRemoveTableViewCell
+                    return cellB
+                }
+            } else {
+                
+                if indexPath.row == 0 {
                     
+                    let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
+                    
+                    cellA.itemName.text = "removes"
+                    
+                    if sections[indexPath.section].isOpened {
+                        
+                        cellA.expandableImage.image = UIImage(named: "down Arrow")
+                        
+                    }else {
+                        
+                        cellA.expandableImage.image = UIImage(named: "topArrow")
+                        
+                    }
+                    
+                    return cellA
+                    
+                }else {
+                    
+                    let cellB = tableView.dequeueReusableCell(withIdentifier: "AditionRemoveTableViewCell", for: indexPath) as! AditionRemoveTableViewCell
+                    return cellB
                 }
                 
-                return cellA
-                
-            }else {
-                
-                let cellB = tableView.dequeueReusableCell(withIdentifier: "AditionRemoveTableViewCell", for: indexPath) as! AditionRemoveTableViewCell
-                return cellB
             }
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
         let cellA = tableView.dequeueReusableCell(withIdentifier: "AdditionRemoveTitleCell", for: indexPath) as! AdditionRemoveTitleCell
         
         if indexPath.row == 0 {
@@ -107,6 +141,10 @@ extension ProductDetailsViewController : UITableViewDelegate , UITableViewDataSo
             tableView.reloadSections([indexPath.section], with: .none)
             
         }else {
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AditionRemoveTableViewCell", for: indexPath) as! AditionRemoveTableViewCell
+            
+            cell.checkedBoxImage.image = UIImage(named:"Checked-box")
             
             print("It is Cell not Section")
             

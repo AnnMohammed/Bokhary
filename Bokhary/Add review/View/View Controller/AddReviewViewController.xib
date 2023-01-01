@@ -100,6 +100,11 @@
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>
     </objects>
+    <designables>
+        <designable name="kLR-UL-OC8">
+            <size key="intrinsicContentSize" width="170" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="star" width="16" height="14"/>
         <systemColor name="systemBackgroundColor">

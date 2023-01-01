@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        title = "Mohamed Noor Bokhari"
+//        title = "Mohamed Noor Bokhari"
         navigationController?.setNavigationBarHidden(false, animated: true)
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))

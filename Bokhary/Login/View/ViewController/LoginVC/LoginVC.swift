@@ -1,36 +1,34 @@
 //
-//  LoginViewController.swift
+//  LoginVC.swift
 //  Bokhary
 //
-//  Created by Ann mohammed on 29/12/2022.
+//  Created by Ann mohammed on 01/01/2023.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginVC: UIViewController {
     
-    @IBOutlet weak var mobileNumberTxtFeild: UITextField!
-    
-    @IBOutlet weak var codeTextFeild: UITextField!
-    @IBOutlet weak var cuntriesView: UIView!
-    @IBOutlet weak var countriesTable: UITableView! {
+    @IBOutlet weak var countriesTableView: UITableView! {
         
         didSet {
             
-            countriesTable.delegate = self
-            countriesTable.dataSource = self
-            countriesTable.register(UINib(nibName: "CountriesTableCell", bundle: nil), forCellReuseIdentifier: "CountriesTableCell")
+            countriesTableView.delegate = self
+            countriesTableView.dataSource = self
+            countriesTableView.register(UINib(nibName: "CountriesTableCell", bundle: nil), forCellReuseIdentifier: "CountriesTableCell")
             
-            let frame = CGRect(x: 0, y: 0, width: countriesTable.frame.size.width, height: 1)
-            countriesTable.tableFooterView = UIView(frame: frame)
-            countriesTable.tableHeaderView = UIView(frame: frame)
+            let frame = CGRect(x: 0, y: 0, width: countriesTableView.frame.size.width, height: 1)
+            countriesTableView.tableFooterView = UIView(frame: frame)
+            countriesTableView.tableHeaderView = UIView(frame: frame)
             
-            countriesTable.rowHeight = 45
-            countriesTable.estimatedRowHeight = UITableView.automaticDimension
+            countriesTableView.rowHeight = 45
+            countriesTableView.estimatedRowHeight = UITableView.automaticDimension
             
         }
-        
     }
+    @IBOutlet weak var countriesView: UIView!
+    @IBOutlet weak var mobileCodeTxtFeild: UITextField!
+    @IBOutlet weak var mobileNumberTextFeild: UITextField!
     
     var list: [Country] = [Country]()
     
@@ -66,23 +64,22 @@ class LoginViewController: UIViewController {
             }
         }
         
-        codeTextFeild.text = "\(list[23].flag ?? "") +\( list[23].extensionCode ?? "")"
+        mobileCodeTxtFeild.text = "\(list[23].flag ?? "") +\( list[23].extensionCode ?? "")"
         
     }
     
-    @IBAction func codeButtonTapped(_ sender: Any) {
+    @IBAction func countriesCodeBTNTapped(_ sender: Any) {
         
-        if cuntriesView.isHidden {
+        if countriesView.isHidden {
             
-            cuntriesView.isHidden = false
+            countriesView.isHidden = false
             
         }else {
             
-            cuntriesView.isHidden = true
+            countriesView.isHidden = true
             
         }
         
     }
-    
     
 }

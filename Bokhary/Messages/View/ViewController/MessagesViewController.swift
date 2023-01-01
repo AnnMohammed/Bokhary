@@ -55,7 +55,7 @@ class MessagesViewController: UIViewController {
     
     func setNavigation() {
         
-        title = "Messages"
+//        title = "Messages"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
         

@@ -116,6 +116,11 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let VC = ProductDetailsViewController()
+//        VC.modalPresentationStyle = .overCurrentContext
+//        VC.modalTransitionStyle = .crossDissolve
+//        present(VC, animated: true, completion: nil)
+        navigationController?.pushViewController(VC, animated: true)
         index = indexPath.row
         collectionView.reloadData()
         

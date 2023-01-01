@@ -30,6 +30,14 @@
 		9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D879BD5295BA76B00715265 /* CommentTableViewCell.swift */; };
 		9D879BD8295BA76B00715265 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D879BD6295BA76B00715265 /* CommentTableViewCell.xib */; };
 		9D879BDB295BAA3700715265 /* AddCmment+EXtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */; };
+		9D897EF92961B66D00CDDA3E /* TapBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D897EF72961B66D00CDDA3E /* TapBarController.swift */; };
+		9D897EFA2961B66D00CDDA3E /* TapBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D897EF82961B66D00CDDA3E /* TapBarController.xib */; };
+		9D93025529619215008238D8 /* WriteCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93025329619215008238D8 /* WriteCommentTableViewCell.swift */; };
+		9D93025629619215008238D8 /* WriteCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D93025429619215008238D8 /* WriteCommentTableViewCell.xib */; };
+		9D93025F296199BC008238D8 /* ReadMoreReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D93025D296199BC008238D8 /* ReadMoreReviewsTableViewCell.swift */; };
+		9D930260296199BC008238D8 /* ReadMoreReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D93025E296199BC008238D8 /* ReadMoreReviewsTableViewCell.xib */; };
+		9D9302642961A2E2008238D8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9302622961A2E2008238D8 /* LoginVC.swift */; };
+		9D9302652961A2E2008238D8 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9302632961A2E2008238D8 /* LoginVC.xib */; };
 		9D98C008295C4CF800032EDD /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98C006295C4CF800032EDD /* OrdersViewController.swift */; };
 		9D98C009295C4CF800032EDD /* OrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D98C007295C4CF800032EDD /* OrdersViewController.xib */; };
 		9D98C012295C560A00032EDD /* ordersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98C010295C560A00032EDD /* ordersTableViewCell.swift */; };
@@ -54,8 +62,6 @@
 		9D9D36E0295909BB00A50F24 /* UIColor+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */; };
 		9D9E916E295D8FAB00ACDB12 /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9E916C295D8FAB00ACDB12 /* TermsAndConditionsVC.swift */; };
 		9D9E916F295D8FAB00ACDB12 /* TermsAndConditionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9E916D295D8FAB00ACDB12 /* TermsAndConditionsVC.xib */; };
-		9D9E9177295D91D800ACDB12 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D9E9175295D91D800ACDB12 /* LoginViewController.swift */; };
-		9D9E9178295D91D800ACDB12 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D9E9176295D91D800ACDB12 /* LoginViewController.xib */; };
 		9DADDCDE295CF90B000F53C6 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCDC295CF90B000F53C6 /* MenuCollectionViewCell.swift */; };
 		9DADDCDF295CF90B000F53C6 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DADDCDD295CF90B000F53C6 /* MenuCollectionViewCell.xib */; };
 		9DADDCE1295CFB27000F53C6 /* MenuCollection+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DADDCE0295CFB27000F53C6 /* MenuCollection+EX.swift */; };
@@ -127,6 +133,14 @@
 		9D879BD5295BA76B00715265 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		9D879BD6295BA76B00715265 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddCmment+EXtension.swift"; sourceTree = "<group>"; };
+		9D897EF72961B66D00CDDA3E /* TapBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarController.swift; sourceTree = "<group>"; };
+		9D897EF82961B66D00CDDA3E /* TapBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TapBarController.xib; sourceTree = "<group>"; };
+		9D93025329619215008238D8 /* WriteCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteCommentTableViewCell.swift; sourceTree = "<group>"; };
+		9D93025429619215008238D8 /* WriteCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteCommentTableViewCell.xib; sourceTree = "<group>"; };
+		9D93025D296199BC008238D8 /* ReadMoreReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMoreReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		9D93025E296199BC008238D8 /* ReadMoreReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadMoreReviewsTableViewCell.xib; sourceTree = "<group>"; };
+		9D9302622961A2E2008238D8 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		9D9302632961A2E2008238D8 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		9D98C006295C4CF800032EDD /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		9D98C007295C4CF800032EDD /* OrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrdersViewController.xib; sourceTree = "<group>"; };
 		9D98C010295C560A00032EDD /* ordersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ordersTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,8 +165,6 @@
 		9D9D36DF295909BB00A50F24 /* UIColor+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+EX.swift"; sourceTree = "<group>"; };
 		9D9E916C295D8FAB00ACDB12 /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
 		9D9E916D295D8FAB00ACDB12 /* TermsAndConditionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsAndConditionsVC.xib; sourceTree = "<group>"; };
-		9D9E9175295D91D800ACDB12 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		9D9E9176295D91D800ACDB12 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		9DADDCDC295CF90B000F53C6 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DADDCDD295CF90B000F53C6 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		9DADDCE0295CFB27000F53C6 /* MenuCollection+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuCollection+EX.swift"; sourceTree = "<group>"; };
@@ -240,6 +252,7 @@
 		9D1D25C42958497C0041431D /* Bokhary */ = {
 			isa = PBXGroup;
 			children = (
+				9D897EF62961B5C200CDDA3E /* TaPBar */,
 				9DB15083295DBD7700F389B2 /* ForgetPassword */,
 				9D7A74B9295DB08E0078F4FF /* Sign Up */,
 				9D9E9170295D917600ACDB12 /* Login */,
@@ -440,6 +453,8 @@
 		9D879BCF295BA71A00715265 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9D93025C296199A0008238D8 /* ReadMoreReviewsCell */,
+				9D930252296191E1008238D8 /* WriteYourCommentCell */,
 				9D879BD4295BA74C00715265 /* CommentCell */,
 			);
 			path = Cell;
@@ -460,6 +475,42 @@
 				9D879BDA295BAA3700715265 /* AddCmment+EXtension.swift */,
 			);
 			path = "AddReview+EX";
+			sourceTree = "<group>";
+		};
+		9D897EF62961B5C200CDDA3E /* TaPBar */ = {
+			isa = PBXGroup;
+			children = (
+				9D897EF72961B66D00CDDA3E /* TapBarController.swift */,
+				9D897EF82961B66D00CDDA3E /* TapBarController.xib */,
+			);
+			path = TaPBar;
+			sourceTree = "<group>";
+		};
+		9D930252296191E1008238D8 /* WriteYourCommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D93025329619215008238D8 /* WriteCommentTableViewCell.swift */,
+				9D93025429619215008238D8 /* WriteCommentTableViewCell.xib */,
+			);
+			path = WriteYourCommentCell;
+			sourceTree = "<group>";
+		};
+		9D93025C296199A0008238D8 /* ReadMoreReviewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				9D93025D296199BC008238D8 /* ReadMoreReviewsTableViewCell.swift */,
+				9D93025E296199BC008238D8 /* ReadMoreReviewsTableViewCell.xib */,
+			);
+			path = ReadMoreReviewsCell;
+			sourceTree = "<group>";
+		};
+		9D9302612961A2BF008238D8 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D9302622961A2E2008238D8 /* LoginVC.swift */,
+				9D9302632961A2E2008238D8 /* LoginVC.xib */,
+			);
+			path = LoginVC;
 			sourceTree = "<group>";
 		};
 		9D98C001295C4AB300032EDD /* CartOrders */ = {
@@ -831,8 +882,7 @@
 		9D9E9174295D91BC00ACDB12 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9D9E9175295D91D800ACDB12 /* LoginViewController.swift */,
-				9D9E9176295D91D800ACDB12 /* LoginViewController.xib */,
+				9D9302612961A2BF008238D8 /* LoginVC */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1256,8 +1306,10 @@
 				9D9D36DD2958F8FE00A50F24 /* SliderHomeTableViewCell.xib in Resources */,
 				9DC96A82295AEF94004B80F7 /* AditionRemoveTableViewCell.xib in Resources */,
 				9DB1508B295DBDD800F389B2 /* ForgetPasswordVC.xib in Resources */,
-				9D9E9178295D91D800ACDB12 /* LoginViewController.xib in Resources */,
+				9D897EFA2961B66D00CDDA3E /* TapBarController.xib in Resources */,
+				9D930260296199BC008238D8 /* ReadMoreReviewsTableViewCell.xib in Resources */,
 				9D98C020295C6A3200032EDD /* PaymentSymarryTableViewCell.xib in Resources */,
+				9D93025629619215008238D8 /* WriteCommentTableViewCell.xib in Resources */,
 				9DC96A92295B31C4004B80F7 /* NotesTableViewCell.xib in Resources */,
 				9D1D25F129587D350041431D /* HomeCollectionViewCell.xib in Resources */,
 				9D98C03C295C8A3F00032EDD /* MessagesViewController.xib in Resources */,
@@ -1275,6 +1327,7 @@
 				9DBC4BDD2959D8B000D76C54 /* ProductDetailsViewController.xib in Resources */,
 				9DADDCEA295D0206000F53C6 /* TrackOrderViewController.xib in Resources */,
 				9D98C02F295C783400032EDD /* FavoriteTableViewCell.xib in Resources */,
+				9D9302652961A2E2008238D8 /* LoginVC.xib in Resources */,
 				9D1D25CD2958497C0041431D /* Main.storyboard in Resources */,
 				9D98C009295C4CF800032EDD /* OrdersViewController.xib in Resources */,
 				9D98C045295C8D3300032EDD /* MessagesTableViewCell.xib in Resources */,
@@ -1346,6 +1399,7 @@
 				9DB1508A295DBDD800F389B2 /* ForgetPasswordVC.swift in Sources */,
 				9DADDCE1295CFB27000F53C6 /* MenuCollection+EX.swift in Sources */,
 				9DF5F52A295F7B5900663A73 /* SignUpTableViewEX.swift in Sources */,
+				9D9302642961A2E2008238D8 /* LoginVC.swift in Sources */,
 				9DF5F524295F793A00663A73 /* CountriesTableCell.swift in Sources */,
 				9DC858DA29589CD800589967 /* MenuViewController.swift in Sources */,
 				9DBC4BD12959B42300D76C54 /* ContentColeectionViewCell.swift in Sources */,
@@ -1357,6 +1411,7 @@
 				9DADDCDE295CF90B000F53C6 /* MenuCollectionViewCell.swift in Sources */,
 				9D1D25C62958497C0041431D /* AppDelegate.swift in Sources */,
 				9DBC4BDC2959D8B000D76C54 /* ProductDetailsViewController.swift in Sources */,
+				9D93025F296199BC008238D8 /* ReadMoreReviewsTableViewCell.swift in Sources */,
 				9D2684E529589340005DFB04 /* HomeTableViewCell.swift in Sources */,
 				9DC96A87295AF4DC004B80F7 /* AdditionRemoveTitleCell.swift in Sources */,
 				9DB15098295DDD7000F389B2 /* MessageTypeCV+EX.swift in Sources */,
@@ -1367,12 +1422,13 @@
 				9D98C028295C77BE00032EDD /* FavoriteViewController.swift in Sources */,
 				9D98C02E295C783400032EDD /* FavoriteTableViewCell.swift in Sources */,
 				9DADDCEC295D0592000F53C6 /* Designable+EX.swift in Sources */,
+				9D897EF92961B66D00CDDA3E /* TapBarController.swift in Sources */,
 				9DC96A91295B31C4004B80F7 /* NotesTableViewCell.swift in Sources */,
 				9D98C033295C7AF800032EDD /* FavoriteVC+EX.swift in Sources */,
 				9DB1509A295DE35300F389B2 /* NavigationBar+EX.swift in Sources */,
 				9D879BC9295B973300715265 /* AddReviewViewController.swift in Sources */,
-				9D9E9177295D91D800ACDB12 /* LoginViewController.swift in Sources */,
 				9DF5F52C295F800E00663A73 /* FindCountryCode.swift in Sources */,
+				9D93025529619215008238D8 /* WriteCommentTableViewCell.swift in Sources */,
 				9D1D25C82958497C0041431D /* SceneDelegate.swift in Sources */,
 				9D1D25F329587E850041431D /* HomeViewController+EX.swift in Sources */,
 				9D879BD7295BA76B00715265 /* CommentTableViewCell.swift in Sources */,

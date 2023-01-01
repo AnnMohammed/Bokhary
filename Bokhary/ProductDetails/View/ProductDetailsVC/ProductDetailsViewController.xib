@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="QuantityLbl" destination="tlf-9u-axj" id="NZz-jK-prH"/>
                 <outlet property="addToCartButton" destination="siD-6G-RYc" id="L3Q-1S-jTZ"/>
+                <outlet property="backButtonTapped" destination="HbB-aJ-h8t" id="bsV-4V-RyP"/>
                 <outlet property="favButton" destination="gNX-FD-c1f" id="AgN-v8-hwe"/>
                 <outlet property="headerImage" destination="McP-nt-YuM" id="RlZ-YG-P5x"/>
                 <outlet property="productDetailTableView" destination="LKJ-oL-Bif" id="QnC-gB-JQt"/>
@@ -24,7 +25,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-oL-Bif">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LKJ-oL-Bif">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <view key="tableHeaderView" contentMode="scaleToFill" id="V3E-sV-oBs">
@@ -82,8 +83,8 @@
                                             <action selector="PlusButton:" destination="-1" eventType="touchUpInside" id="aDX-dJ-lYn"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlf-9u-axj">
-                                        <rect key="frame" x="62.5" y="15.5" width="15" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlf-9u-axj">
+                                        <rect key="frame" x="65.5" y="15.5" width="9" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -125,7 +126,7 @@
                                     <constraint firstAttribute="width" constant="30" id="BMm-Jd-Hqi"/>
                                     <constraint firstAttribute="height" constant="30" id="VVq-jN-jpe"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <buttonConfiguration key="configuration" style="plain" image="notFav"/>
                                 <connections>
                                     <action selector="FavButton:" destination="-1" eventType="touchUpInside" id="jom-qQ-VLT"/>
@@ -143,6 +144,13 @@
                                     <action selector="MessageButton:" destination="-1" eventType="touchUpInside" id="fGz-sN-scZ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caret left" translatesAutoresizingMaskIntoConstraints="NO" id="HbB-aJ-h8t">
+                                <rect key="frame" x="35" y="55.5" width="11" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="AYI-iQ-ZJJ"/>
+                                    <constraint firstAttribute="width" constant="11" id="tJP-gD-4ET"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -160,8 +168,10 @@
                             <constraint firstItem="Xda-ZX-xgy" firstAttribute="top" secondItem="gNX-FD-c1f" secondAttribute="bottom" constant="10" id="SiC-AJ-CWi"/>
                             <constraint firstItem="kkV-wC-FBY" firstAttribute="top" secondItem="fvb-xu-zbb" secondAttribute="bottom" constant="30" id="TjS-28-HA8"/>
                             <constraint firstItem="fvb-xu-zbb" firstAttribute="top" secondItem="WnJ-Lh-54h" secondAttribute="bottom" constant="46" id="WuZ-kJ-fgN"/>
+                            <constraint firstItem="HbB-aJ-h8t" firstAttribute="centerY" secondItem="gNX-FD-c1f" secondAttribute="centerY" id="bFN-DE-b9h"/>
                             <constraint firstItem="fvb-xu-zbb" firstAttribute="leading" secondItem="b5p-ku-ueU" secondAttribute="trailing" constant="34" id="lQz-NA-L8e"/>
                             <constraint firstAttribute="trailing" secondItem="gNX-FD-c1f" secondAttribute="trailing" constant="37" id="rDK-iV-Qn9"/>
+                            <constraint firstItem="HbB-aJ-h8t" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="35" id="sfb-UA-snt"/>
                             <constraint firstAttribute="trailing" secondItem="Xda-ZX-xgy" secondAttribute="trailing" constant="37" id="tXO-N1-HKN"/>
                             <constraint firstItem="WnJ-Lh-54h" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="21" id="wtK-N8-VlA"/>
                             <constraint firstAttribute="trailing" secondItem="siD-6G-RYc" secondAttribute="trailing" constant="26" id="ylG-XV-gtA"/>
@@ -181,6 +191,7 @@
         </view>
     </objects>
     <resources>
+        <image name="Caret left" width="11" height="18.5"/>
         <image name="Home images" width="428" height="214"/>
         <image name="Minus" width="25" height="25"/>
         <image name="Plus" width="25" height="25"/>

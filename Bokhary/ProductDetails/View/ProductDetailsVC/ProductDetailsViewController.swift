@@ -12,9 +12,13 @@ class ProductDetailsViewController: UIViewController {
     // variabels
     
     var sections = [Section]()
-    
+    var istapped = false
+    var numberOfItems = 0
+    let categoriesNames = ["Additions" , "Removes" , "Add any notes"]
+    var isChecked = false
     // ortlets
     
+
     @IBOutlet weak var addToCartButton: UIButton!
     @IBOutlet weak var QuantityLbl: UILabel!
     @IBOutlet weak var quantityView: UIView!
@@ -45,9 +49,11 @@ class ProductDetailsViewController: UIViewController {
         stylingButton()
         stylingView()
         navigationController?.isNavigationBarHidden = true
+        
         productDetailTableView.contentInsetAdjustmentBehavior = .never
         productDetailTableView.allowsMultipleSelection = true
         setupHeaderImage()
+        
     }
     
     func setUpModel (){
@@ -86,14 +92,56 @@ class ProductDetailsViewController: UIViewController {
     }
     
     @IBAction func FavButton(_ sender: Any) {
+        
+        if !istapped {
+            
+            print("Added to favorite")
+            favButton.setImage(UIImage(named: "full favorite"), for: .normal)
+            istapped = true
+            
+        }else {
+            
+            print("removed from favorite")
+            favButton.setImage(UIImage(named: "notFav"), for: .normal)
+            
+            istapped = false
+        }
+        
     }
     @IBAction func MessageButton(_ sender: Any) {
+        
+        print("directed to messages")
+        
     }
+    
     @IBAction func PlusButton(_ sender: Any) {
+        
+        numberOfItems += 1
+        QuantityLbl.text = "\(numberOfItems)"
     }
+    
     @IBAction func MinusButton(_ sender: Any) {
+        
+        if numberOfItems > 0  {
+            
+            numberOfItems -= 1
+            QuantityLbl.text = "\(numberOfItems)"
+            
+        }else {
+            
+            print("cant get minus")
+            
+        }
+        
     }
+    
     @IBAction func AddToCartButton(_ sender: Any) {
+        
+        print("Added to cart")
+        
     }
+    @IBOutlet weak var backButtonTapped: UIImageView!
+    
+    
     
 }

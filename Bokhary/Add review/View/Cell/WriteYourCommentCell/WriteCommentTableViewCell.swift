@@ -1,16 +1,14 @@
 //
-//  AditionRemoveTableViewCell.swift
+//  WriteCommentTableViewCell.swift
 //  Bokhary
 //
-//  Created by Ann mohammed on 27/12/2022.
+//  Created by Ann mohammed on 01/01/2023.
 //
 
 import UIKit
 
-class AditionRemoveTableViewCell: UITableViewCell {
+class WriteCommentTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var checkedBoxImage: UIImageView!
-    @IBOutlet weak var itemNamelabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

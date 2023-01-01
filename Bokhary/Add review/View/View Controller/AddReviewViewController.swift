@@ -15,9 +15,13 @@ class AddReviewViewController: UIViewController {
             
             commentsTableView.delegate = self
             commentsTableView.dataSource = self
+            
             commentsTableView.register(UINib(nibName: "CommentTableViewCell", bundle: nil), forCellReuseIdentifier: "CommentTableViewCell")
-            commentsTableView.rowHeight = 100
-            commentsTableView.estimatedRowHeight = UITableView.automaticDimension
+            commentsTableView.register(UINib(nibName: "ReadMoreReviewsTableViewCell", bundle: nil), forCellReuseIdentifier: "ReadMoreReviewsTableViewCell")
+            commentsTableView.register(UINib(nibName: "WriteCommentTableViewCell", bundle: nil), forCellReuseIdentifier: "WriteCommentTableViewCell")
+            
+            commentsTableView.rowHeight = UITableView.automaticDimension
+            commentsTableView.estimatedRowHeight = 44
         }
         
     }
@@ -25,17 +29,25 @@ class AddReviewViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        commentsTableView.separatorStyle = .none
+        setNavigation()
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setNavigation(){
+        
+        title = "Add review"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        
     }
-    */
+    
+    @objc func addTapped() {
+        
+        print("cart")
+        
+    }
 
 }

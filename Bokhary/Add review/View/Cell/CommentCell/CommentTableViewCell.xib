@@ -72,6 +72,7 @@
                             <constraint firstItem="vZs-tU-jXg" firstAttribute="leading" secondItem="bho-NR-ckN" secondAttribute="leading" constant="29" id="GhO-IM-R9X"/>
                             <constraint firstItem="KMB-d1-eTS" firstAttribute="top" secondItem="vZs-tU-jXg" secondAttribute="bottom" constant="10" id="LZf-jF-Ggk"/>
                             <constraint firstItem="RwB-EG-3Qm" firstAttribute="top" secondItem="bho-NR-ckN" secondAttribute="top" constant="12" id="M1M-a2-Q6T"/>
+                            <constraint firstAttribute="height" constant="80" id="Xlt-7e-cyF"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -89,6 +90,11 @@
             <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="vZs-tU-jXg">
+            <size key="intrinsicContentSize" width="95" height="15"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

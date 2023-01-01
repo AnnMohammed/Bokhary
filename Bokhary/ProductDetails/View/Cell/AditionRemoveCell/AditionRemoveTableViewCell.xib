@@ -16,15 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqG-iv-uYD">
-                        <rect key="frame" x="32" y="22" width="12" height="12"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="12" id="0SC-r9-uqm"/>
-                            <constraint firstAttribute="width" constant="12" id="4Cn-Co-RSz"/>
-                        </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="Checked-box"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tomato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hg-9f-K0k">
                         <rect key="frame" x="50" y="19" width="51" height="18"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
@@ -37,21 +28,32 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itemNotselected" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-0w-A02">
+                        <rect key="frame" x="32" y="22" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="fOq-k5-xw2"/>
+                            <constraint firstAttribute="height" constant="12" id="vpL-3b-US9"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="0Rh-kH-cYQ" secondAttribute="trailing" constant="25" id="6TP-7S-3J8"/>
-                    <constraint firstItem="RqG-iv-uYD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="RZn-DW-tdU"/>
-                    <constraint firstItem="0Rh-kH-cYQ" firstAttribute="centerY" secondItem="RqG-iv-uYD" secondAttribute="centerY" id="WR7-IX-vul"/>
-                    <constraint firstItem="RqG-iv-uYD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="eVa-Nm-kcK"/>
-                    <constraint firstItem="3hg-9f-K0k" firstAttribute="centerY" secondItem="RqG-iv-uYD" secondAttribute="centerY" id="o2H-K6-nev"/>
-                    <constraint firstItem="3hg-9f-K0k" firstAttribute="leading" secondItem="RqG-iv-uYD" secondAttribute="trailing" constant="6" id="pWk-ad-XBD"/>
+                    <constraint firstItem="0Rh-kH-cYQ" firstAttribute="centerY" secondItem="3hg-9f-K0k" secondAttribute="centerY" id="82t-Ok-SIb"/>
+                    <constraint firstItem="3hg-9f-K0k" firstAttribute="leading" secondItem="d3g-0w-A02" secondAttribute="trailing" constant="6" id="da6-Jc-i0b"/>
+                    <constraint firstItem="d3g-0w-A02" firstAttribute="centerY" secondItem="3hg-9f-K0k" secondAttribute="centerY" id="p1a-2t-jUf"/>
+                    <constraint firstItem="d3g-0w-A02" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="p3W-l7-BrE"/>
+                    <constraint firstItem="d3g-0w-A02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="qBi-A0-PRO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkedBoxImage" destination="d3g-0w-A02" id="YTp-YE-sY6"/>
+                <outlet property="itemNamelabel" destination="3hg-9f-K0k" id="Gqj-Qr-HIj"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Checked-box" width="17" height="17"/>
+        <image name="itemNotselected" width="12" height="12"/>
     </resources>
 </document>
