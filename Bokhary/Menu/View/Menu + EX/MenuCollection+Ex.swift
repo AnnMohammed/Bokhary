@@ -20,12 +20,12 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
             
             return 1
             
-            }
-            else {
-                
-               return 5
-                
-            }
+        }
+        else {
+            
+            return 5
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -34,18 +34,18 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
             
             return 5
             
-            }
-            else {
+        }
+        else {
+            
+            if !isChanged {
                 
-                if !isChanged {
-                    
-                    return 2
-                }else{
-                    
-                    return 1
-                }
+                return 2
+            }else{
                 
+                return 1
             }
+            
+        }
         
     }
     
@@ -55,28 +55,41 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
         if collectionView == self.categorieCollectionView {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
+            
+            if indexPath.row == index {
+                
+                cell.indicatorView.backgroundColor = UIColor.init(hexString: "#E4A371")
+                cell.indicatorView.isHidden = false
+                
+            }else {
+                
+                cell.indicatorView.backgroundColor = UIColor.white
+                cell.indicatorView.isHidden = true
+                
+            }
+            
             return cell
             
-            }
-
-            else {
-                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentColeectionViewCell", for: indexPath) as! ContentColeectionViewCell
+        }
+        
+        else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentColeectionViewCell", for: indexPath) as! ContentColeectionViewCell
+            
+            if isChanged {
                 
-                if isChanged {
-                    
-                    cell.priceLabelInsideStack.isHidden = true
-                    cell.priceLabelOutsideStack.isHidden = false
-                    
-                }else {
-                    
-                    cell.priceLabelInsideStack.isHidden = false
-                    cell.priceLabelOutsideStack.isHidden = true
-                    
-                }
+                cell.priceLabelInsideStack.isHidden = true
+                cell.priceLabelOutsideStack.isHidden = false
                 
-                return cell
-
+            }else {
+                
+                cell.priceLabelInsideStack.isHidden = false
+                cell.priceLabelOutsideStack.isHidden = true
+                
             }
+            
+            return cell
+            
+        }
         
     }
     
@@ -86,21 +99,26 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
             
             return CGSize(width: (categorieCollectionView.frame.size.width - 5) / 3, height: 100)
             
-            }
-            else {
+        }
+        else {
+            
+            if isChanged {
                 
-                if isChanged {
-                    
-                    return CGSize(width: contentCollectionview.frame.size.width, height: 214 )
-                    
-                }else {
-                    
-                    return CGSize(width: (contentCollectionview.frame.size.width - 10) / 2, height: 214 )
-                    
-                }
+                return CGSize(width: contentCollectionview.frame.size.width, height: 214 )
                 
+            }else {
+                
+                return CGSize(width: (contentCollectionview.frame.size.width - 10) / 2, height: 214 )
                 
             }
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        index = indexPath.row
+        collectionView.reloadData()
         
     }
+    
 }
