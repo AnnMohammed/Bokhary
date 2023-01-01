@@ -48,11 +48,11 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N5x-L1-sVV" secondAttribute="trailing" id="2QE-Xp-JjY"/>
                 <constraint firstItem="N5x-L1-sVV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4Cx-Ak-arT"/>
+                <constraint firstItem="3VZ-Zj-d7w" firstAttribute="top" secondItem="9Y7-4I-kGV" secondAttribute="bottom" constant="2" id="JTo-Q4-Fs9"/>
                 <constraint firstItem="9Y7-4I-kGV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="Lx2-xu-hHf"/>
                 <constraint firstItem="3VZ-Zj-d7w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RKd-5X-J9M"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3VZ-Zj-d7w" secondAttribute="bottom" constant="353" id="VtR-DQ-c4E"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="3VZ-Zj-d7w" secondAttribute="bottom" constant="353" id="VtR-DQ-c4E"/>
                 <constraint firstItem="9Y7-4I-kGV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="e68-RK-QSV"/>
-                <constraint firstItem="3VZ-Zj-d7w" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="256" id="iPb-sA-AEa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Y7-4I-kGV" secondAttribute="trailing" constant="72" id="nNZ-Ap-c1a"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3VZ-Zj-d7w" secondAttribute="trailing" constant="17" id="nmK-0A-VgJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="N5x-L1-sVV" secondAttribute="bottom" constant="-34" id="oYm-Sz-4LJ"/>

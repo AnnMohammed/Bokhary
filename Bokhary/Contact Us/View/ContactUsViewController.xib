@@ -42,7 +42,7 @@
             <color key="backgroundColor" name="Primary"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ios-pB-2sA" secondAttribute="trailing" id="TtQ-pG-bRK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ios-pB-2sA" secondAttribute="bottom" constant="-34" id="hJv-Ku-gGj"/>
+                <constraint firstAttribute="bottom" secondItem="ios-pB-2sA" secondAttribute="bottom" id="hJv-Ku-gGj"/>
                 <constraint firstItem="ios-pB-2sA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="nMw-q6-ehf"/>
                 <constraint firstItem="ios-pB-2sA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qWg-Bn-unk"/>
             </constraints>

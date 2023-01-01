@@ -26,10 +26,12 @@
                     <rect key="frame" x="0.0" y="48" width="414" height="848"/>
                     <standardMapConfiguration key="preferredConfiguration"/>
                 </mapView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xk-j9-k9Y">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Xk-j9-k9Y">
                     <rect key="frame" x="15" y="802" width="384" height="48"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" name="Red3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="bLR-4G-gSP"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Confirm Address">
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,6 +39,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
                             <color key="value" name="Red2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -48,7 +53,11 @@
             <color key="backgroundColor" name="Primary"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="OEL-L8-kSb" secondAttribute="bottom" constant="-34" id="4U4-4J-I53"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Xk-j9-k9Y" secondAttribute="trailing" constant="15" id="4g9-1v-fqI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="6Xk-j9-k9Y" secondAttribute="bottom" constant="12" id="Aoo-te-MMh"/>
+                <constraint firstItem="6Xk-j9-k9Y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="TbR-Np-bSQ"/>
                 <constraint firstItem="OEL-L8-kSb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZbP-Hv-Dkk"/>
+                <constraint firstItem="6Xk-j9-k9Y" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="754" id="boj-1i-89F"/>
                 <constraint firstItem="OEL-L8-kSb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rg0-cW-Frx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OEL-L8-kSb" secondAttribute="trailing" id="zOJ-jM-xX9"/>
             </constraints>

@@ -104,7 +104,7 @@
             <constraints>
                 <constraint firstItem="8d4-S1-EU7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8Sy-GI-9N9"/>
                 <constraint firstItem="8d4-S1-EU7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="B5p-Ch-kZf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8d4-S1-EU7" secondAttribute="bottom" constant="-34" id="UV1-Cr-VQ2"/>
+                <constraint firstAttribute="bottom" secondItem="8d4-S1-EU7" secondAttribute="bottom" id="UV1-Cr-VQ2"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8d4-S1-EU7" secondAttribute="trailing" id="a6J-2h-oVu"/>
             </constraints>
             <point key="canvasLocation" x="78.625954198473281" y="19.718309859154932"/>
@@ -113,7 +113,7 @@
     <resources>
         <image name="Logo (3)" width="62" height="62"/>
         <namedColor name="MoreVCHeaderColor">
-            <color red="0.98431372640000003" green="0.96862745289999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98400002717971802" green="0.96899998188018799" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Primary">
             <color red="0.9179999828338623" green="0.82700002193450928" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

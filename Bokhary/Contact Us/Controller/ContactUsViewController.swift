@@ -31,7 +31,7 @@ class ContactUsViewController: UIViewController {
     }
     func navBarConfig() {
         navigationController?.navigationBar.backgroundColor = UIColor(named: "Primary")
-        navigationItem.title = "About US"
+        navigationItem.title = "Contact US"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .done, target: self, action: #selector(barButtonTapped))
         self.navigationController?.navigationBar.tintColor = UIColor(named: "CartColor")
     }

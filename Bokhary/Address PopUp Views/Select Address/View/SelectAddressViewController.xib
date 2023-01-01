@@ -64,7 +64,7 @@
                             </connections>
                         </button>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vgr-Ba-hKP">
-                            <rect key="frame" x="8" y="69" width="358" height="320"/>
+                            <rect key="frame" x="8" y="47" width="358" height="342"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="358" id="Cvt-Vm-EGp"/>
@@ -102,15 +102,16 @@
                         <constraint firstAttribute="bottom" secondItem="SaC-nf-eSK" secondAttribute="bottom" constant="12" id="9da-y1-z1S"/>
                         <constraint firstItem="tVt-TI-7rU" firstAttribute="top" secondItem="2w8-xv-NNx" secondAttribute="top" constant="26" id="CkT-nb-uhI"/>
                         <constraint firstItem="tVt-TI-7rU" firstAttribute="centerX" secondItem="2w8-xv-NNx" secondAttribute="centerX" id="aN3-lo-07Q"/>
-                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="8" id="aRY-zJ-9ml"/>
-                        <constraint firstItem="wSy-Rw-Idp" firstAttribute="top" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="23" id="cdM-dz-kNb"/>
+                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="8" id="aRY-zJ-9ml"/>
+                        <constraint firstItem="wSy-Rw-Idp" firstAttribute="top" relation="lessThanOrEqual" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="23" id="cdM-dz-kNb"/>
                         <constraint firstItem="wSy-Rw-Idp" firstAttribute="leading" secondItem="SaC-nf-eSK" secondAttribute="trailing" constant="19" id="gC0-ge-IW2"/>
                         <constraint firstItem="SaC-nf-eSK" firstAttribute="top" secondItem="vgr-Ba-hKP" secondAttribute="bottom" constant="22" id="kJT-rk-Qdj"/>
-                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="top" secondItem="tVt-TI-7rU" secondAttribute="bottom" constant="22" id="ki2-HW-lG5"/>
+                        <constraint firstItem="vgr-Ba-hKP" firstAttribute="top" secondItem="tVt-TI-7rU" secondAttribute="bottom" id="ki2-HW-lG5"/>
                         <constraint firstAttribute="trailing" secondItem="wSy-Rw-Idp" secondAttribute="trailing" constant="24" id="ksR-pQ-29U"/>
                         <constraint firstItem="SaC-nf-eSK" firstAttribute="leading" secondItem="2w8-xv-NNx" secondAttribute="leading" constant="25" id="lCb-Kr-q2S"/>
                         <constraint firstAttribute="bottom" secondItem="wSy-Rw-Idp" secondAttribute="bottom" constant="11" id="qtf-zG-PiE"/>
-                        <constraint firstAttribute="trailing" secondItem="vgr-Ba-hKP" secondAttribute="trailing" constant="8" id="tXo-K4-VxP"/>
+                        <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="vgr-Ba-hKP" secondAttribute="trailing" constant="8" id="tXo-K4-VxP"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="466" id="wOe-ma-8XN"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -122,9 +123,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2w8-xv-NNx" secondAttribute="bottom" constant="190" id="4g3-Ot-RJq"/>
-                <constraint firstItem="2w8-xv-NNx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="158" id="jQJ-iV-ZbQ"/>
+                <constraint firstItem="2w8-xv-NNx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="158" id="1JN-Fj-zT5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2w8-xv-NNx" secondAttribute="bottom" constant="190" id="7w6-cI-8gw"/>
+                <constraint firstItem="2w8-xv-NNx" firstAttribute="top" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="158" id="cNq-9b-zHg"/>
                 <constraint firstItem="2w8-xv-NNx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sDI-sf-7vT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="2w8-xv-NNx" secondAttribute="bottom" constant="190" id="tGp-Rx-BTx"/>
             </constraints>
             <point key="canvasLocation" x="-121.73913043478262" y="1.3392857142857142"/>
         </view>

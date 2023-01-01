@@ -36,7 +36,7 @@ extension CartViewController: UICollectionViewDelegateFlowLayout {
         return 0
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 207, height: 40)
+        return CGSize(width: cartCollectionView.layer.bounds.width / 2, height: 40)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 3, left: 0, bottom: -10, right: 0)

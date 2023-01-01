@@ -33,8 +33,8 @@ class CartViewController: UIViewController {
     }
     
     @IBAction func chechOutButton(_ sender: UIButton) {
-       // presentNoAddressPopUp()
-        presentAddNewAddressPopUp()
+      //  presentNoAddressPopUp()
+         presentAddNewAddressPopUp()
         
     }
     @IBAction func plusButton(_ sender: UIButton) {

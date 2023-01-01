@@ -176,7 +176,7 @@
 		A6ABF700295DBB5200648EAF /* MyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		A6ABF701295DBB5200648EAF /* MyProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileTableViewCell.xib; sourceTree = "<group>"; };
 		A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryLocationMapViewController.swift; sourceTree = "<group>"; };
-		A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryLocationMapViewController.xib; sourceTree = "<group>"; };
+		A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DeliveryLocationMapViewController.xib; path = ../Controller/DeliveryLocationMapViewController.xib; sourceTree = "<group>"; };
 		A6B3548B295C36CE007BA8CE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		A6B3548C295C36CE007BA8CE /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		A6B3548F295C36E6007BA8CE /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
@@ -311,7 +311,6 @@
 			isa = PBXGroup;
 			children = (
 				A6B35482295B1B6A007BA8CE /* DeliveryLocationMapViewController.swift */,
-				A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,6 +318,7 @@
 		A61E24CB295B1AB60023CFE6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6B35483295B1B6A007BA8CE /* DeliveryLocationMapViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

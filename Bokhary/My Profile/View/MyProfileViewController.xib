@@ -39,10 +39,10 @@
                             </connections>
                         </button>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Jm-U5-TOi">
-                            <rect key="frame" x="0.0" y="90" width="393" height="277"/>
+                            <rect key="frame" x="0.0" y="90" width="393" height="320"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="393" id="Ngh-Ig-pwE"/>
-                                <constraint firstAttribute="height" constant="277" id="zHD-qY-1TD"/>
+                                <constraint firstAttribute="height" constant="320" id="zHD-qY-1TD"/>
                             </constraints>
                             <color key="separatorColor" name="Secondary"/>
                         </tableView>
@@ -72,7 +72,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="h5u-WV-JJW" secondAttribute="bottom" constant="274" id="0uP-A1-DES"/>
+                        <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="h5u-WV-JJW" secondAttribute="bottom" constant="274" id="0uP-A1-DES"/>
                         <constraint firstItem="H87-K2-9EO" firstAttribute="top" secondItem="Hb1-SM-oBY" secondAttribute="top" constant="40" id="28c-ES-frp"/>
                         <constraint firstItem="h5u-WV-JJW" firstAttribute="leading" secondItem="Hb1-SM-oBY" secondAttribute="leading" constant="12" id="3xC-S9-5Fc"/>
                         <constraint firstAttribute="bottom" secondItem="H87-K2-9EO" secondAttribute="bottom" constant="737" id="4W3-zE-eVJ"/>
@@ -82,7 +82,7 @@
                         <constraint firstAttribute="trailing" secondItem="1Jm-U5-TOi" secondAttribute="trailing" id="s6I-F3-Tsd"/>
                         <constraint firstItem="1Jm-U5-TOi" firstAttribute="leading" secondItem="Hb1-SM-oBY" secondAttribute="leading" id="sMp-SO-TV9"/>
                         <constraint firstAttribute="trailing" secondItem="H87-K2-9EO" secondAttribute="trailing" constant="37" id="wW7-J4-4GV"/>
-                        <constraint firstItem="h5u-WV-JJW" firstAttribute="top" secondItem="1Jm-U5-TOi" secondAttribute="bottom" constant="98" id="yJp-m3-9rD"/>
+                        <constraint firstItem="h5u-WV-JJW" firstAttribute="top" secondItem="1Jm-U5-TOi" secondAttribute="bottom" constant="55" id="yJp-m3-9rD"/>
                     </constraints>
                 </view>
             </subviews>

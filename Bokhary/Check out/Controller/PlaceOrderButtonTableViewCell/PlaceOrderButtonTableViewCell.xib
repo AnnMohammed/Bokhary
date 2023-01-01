@@ -18,9 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="411" height="50"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-pa-acT">
-                        <rect key="frame" x="15" y="1" width="384" height="48"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLH-pa-acT">
+                        <rect key="frame" x="13" y="1" width="384" height="48"/>
                         <color key="backgroundColor" name="Red3"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Place order">
@@ -36,6 +35,12 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CLH-pa-acT" secondAttribute="trailing" constant="14" id="Qnh-j0-5Wr"/>
+                    <constraint firstAttribute="bottom" secondItem="CLH-pa-acT" secondAttribute="bottom" constant="1" id="fTJ-BR-npp"/>
+                    <constraint firstItem="CLH-pa-acT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="hbY-pn-rDa"/>
+                    <constraint firstItem="CLH-pa-acT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="tPy-k1-3DW"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
