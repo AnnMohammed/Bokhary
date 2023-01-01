@@ -35,7 +35,6 @@ class CheckOutViewController: UIViewController {
         checkOutTableView.register(UINib(nibName: cartViewModel.carttTableViewCellID, bundle: .main), forCellReuseIdentifier: cartViewModel.carttTableViewCellID)
         checkOutTableView.register(UINib(nibName: checkOutViewModel.placeOrderButtonTableViewCellID, bundle: .main), forCellReuseIdentifier: checkOutViewModel.placeOrderButtonTableViewCellID)
         checkOutTableView.reloadData()
-        
     }
     func navBarConfig() {
          navigationController?.navigationBar.backgroundColor = UIColor(named: "Primary")
