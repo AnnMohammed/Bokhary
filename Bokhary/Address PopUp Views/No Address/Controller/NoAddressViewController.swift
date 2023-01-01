@@ -11,7 +11,7 @@ class NoAddressViewController: UIViewController {
     @IBOutlet weak var addAddressOutlet: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        buttonsColors()
+       // buttonsColors()
     }
     func buttonsColors() {
         self.addAddressOutlet.applyGradient(colors: [UIButton.UIColorFromRGB(0xB01F22).cgColor,UIButton.UIColorFromRGB(0xD92822).cgColor], num: 60, title: "")

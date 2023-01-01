@@ -57,7 +57,7 @@ class CartViewController: UIViewController {
         tableViewConfig()
         navBarConfig()
         counterLabel.text = "\(cartViewModel.count)"
-        buttonsColors()
+      //  buttonsColors()
     }
     func collectionViewConfig() {
         cartCollectionView.delegate = self

@@ -29,7 +29,7 @@ class DeliveryLocationMapViewController: UIViewController {
     //MARK: Main Methods
     func initView() {
         navBarConfig()
-        buttonsColors()
+       // buttonsColors()
     }
     //MARK: View Methods
     func navBarConfig() {

@@ -26,7 +26,7 @@ class AddAddressViewController: UIViewController {
         
     }
     func initView() {
-        buttonsColors()
+       // buttonsColors()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

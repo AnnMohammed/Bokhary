@@ -20,7 +20,7 @@ class SelectAddressViewController: UIViewController {
     }
    func initView() {
        tableViewConfig()
-       buttonsColors()
+      // buttonsColors()
     }
     func tableViewConfig() {
         addressesTableView.delegate = self
