@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BranchesViewController" customModule="Bokhary" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUi-yg-Q92" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Branches" translatesAutoresizingMaskIntoConstraints="NO" id="mYU-Jq-71v">
+                            <rect key="frame" x="0.0" y="0.0" width="428" height="896"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_al bahari-1" translatesAutoresizingMaskIntoConstraints="NO" id="Wom-bq-SqZ">
+                            <rect key="frame" x="76" y="134" width="276" height="180"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="180" id="eKM-P2-1hl"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="EIy-rT-5rg">
+                            <rect key="frame" x="71" y="348" width="286" height="318"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L1-s7-S2E">
+                                    <rect key="frame" x="0.0" y="0.0" width="286" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="G4D-mW-crh"/>
+                                        <constraint firstAttribute="width" constant="286" id="bYo-nV-9WF"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="delivery"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-n5-m5R">
+                                    <rect key="frame" x="0.0" y="88" width="286" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="286" id="JvQ-2k-P8l"/>
+                                        <constraint firstAttribute="height" constant="54" id="iaF-iu-OYv"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="pickUp"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA0-Er-zz3">
+                                    <rect key="frame" x="0.0" y="176" width="286" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="286" id="LY2-s2-J13"/>
+                                        <constraint firstAttribute="height" constant="54" id="wxt-Ie-dbK"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="توصيل"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2V-fw-Mx1">
+                                    <rect key="frame" x="0.0" y="264" width="286" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="286" id="dP9-p4-JGp"/>
+                                        <constraint firstAttribute="height" constant="54" id="gga-kH-J67"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="استلام"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mYU-Jq-71v" secondAttribute="trailing" id="1P6-qf-qcu"/>
+                        <constraint firstItem="Wom-bq-SqZ" firstAttribute="top" secondItem="kUi-yg-Q92" secondAttribute="top" constant="134" id="2Gc-Ls-xO7"/>
+                        <constraint firstAttribute="trailing" secondItem="EIy-rT-5rg" secondAttribute="trailing" constant="71" id="3o6-vW-gkn"/>
+                        <constraint firstItem="Wom-bq-SqZ" firstAttribute="leading" secondItem="kUi-yg-Q92" secondAttribute="leading" constant="76" id="9yQ-9V-qTh"/>
+                        <constraint firstItem="EIy-rT-5rg" firstAttribute="top" secondItem="Wom-bq-SqZ" secondAttribute="bottom" constant="34" id="HhK-AV-Kgq"/>
+                        <constraint firstItem="mYU-Jq-71v" firstAttribute="top" secondItem="kUi-yg-Q92" secondAttribute="top" id="Man-s0-7kn"/>
+                        <constraint firstAttribute="trailing" secondItem="Wom-bq-SqZ" secondAttribute="trailing" constant="76" id="Vac-0b-haZ"/>
+                        <constraint firstAttribute="bottom" secondItem="mYU-Jq-71v" secondAttribute="bottom" id="hyw-Ha-MxJ"/>
+                        <constraint firstItem="mYU-Jq-71v" firstAttribute="leading" secondItem="kUi-yg-Q92" secondAttribute="leading" id="qRe-fy-Xf2"/>
+                        <constraint firstItem="EIy-rT-5rg" firstAttribute="leading" secondItem="kUi-yg-Q92" secondAttribute="leading" constant="71" id="qd3-vK-9sp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="kUi-yg-Q92" secondAttribute="bottom" id="5vt-cx-buc"/>
+                <constraint firstItem="kUi-yg-Q92" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="76y-oF-a45"/>
+                <constraint firstItem="kUi-yg-Q92" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="h0W-RE-su6"/>
+                <constraint firstItem="kUi-yg-Q92" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="umY-Lo-gve"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Branches" width="428" height="927"/>
+        <image name="Logo_al bahari-1" width="340" height="222"/>
+        <image name="delivery" width="286" height="54"/>
+        <image name="pickUp" width="286" height="54"/>
+        <image name="استلام" width="286" height="54"/>
+        <image name="توصيل" width="286" height="54"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
