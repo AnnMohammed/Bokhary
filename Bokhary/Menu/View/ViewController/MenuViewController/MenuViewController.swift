@@ -59,6 +59,7 @@ class MenuViewController: UIViewController {
         title = "Menu"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        navigationController?.setNavigationBarHidden(false, animated: true)
         
         let add = UIBarButtonItem(image: UIImage(named: "Search"), style: .plain, target: self, action: #selector(searchTapped))
         let play = UIBarButtonItem(image: UIImage(named: "branches-svgrepo-com"), style: .plain, target: self, action: #selector(playTapped))
@@ -66,6 +67,13 @@ class MenuViewController: UIViewController {
         navigationItem.leftBarButtonItems = [add, play]
         navigationItem.leftBarButtonItem?.tintColor = UIColor.black
         play.tintColor = UIColor.black
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
     }
     
     @objc func addTapped() {
@@ -154,7 +162,7 @@ class MenuViewController: UIViewController {
                 //write your logic for left swipe
                 print("Swiped left")
                 
-                if counter >= productsArr.count - 2 {
+                if counter >= productsArr.count - 1 {
                     
                     print("cannot make counter")
                 }else{

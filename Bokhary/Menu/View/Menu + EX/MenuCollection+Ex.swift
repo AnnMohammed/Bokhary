@@ -32,7 +32,7 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
         
         if collectionView == self.categorieCollectionView {
             
-            return 5
+            return productsArr.count
             
         }
         else {
@@ -116,13 +116,22 @@ extension MenuViewController : UICollectionViewDelegate , UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let VC = ProductDetailsViewController()
-//        VC.modalPresentationStyle = .overCurrentContext
-//        VC.modalTransitionStyle = .crossDissolve
-//        present(VC, animated: true, completion: nil)
-        navigationController?.pushViewController(VC, animated: true)
-        index = indexPath.row
-        collectionView.reloadData()
+        if collectionView == self.contentCollectionview {
+            
+            let VC = ProductDetailsViewController()
+    //        VC.modalPresentationStyle = .overCurrentContext
+    //        VC.modalTransitionStyle = .crossDissolve
+    //        present(VC, animated: true, completion: nil)
+            navigationController?.pushViewController(VC, animated: true)
+            
+        }
+        else {
+            
+            index = indexPath.row
+            counter = index
+            collectionView.reloadData()
+            
+        }
         
     }
     

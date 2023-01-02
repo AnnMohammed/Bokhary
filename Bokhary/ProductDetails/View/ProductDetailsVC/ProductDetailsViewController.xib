@@ -12,7 +12,6 @@
             <connections>
                 <outlet property="QuantityLbl" destination="tlf-9u-axj" id="NZz-jK-prH"/>
                 <outlet property="addToCartButton" destination="siD-6G-RYc" id="L3Q-1S-jTZ"/>
-                <outlet property="backButtonTapped" destination="HbB-aJ-h8t" id="bsV-4V-RyP"/>
                 <outlet property="favButton" destination="gNX-FD-c1f" id="AgN-v8-hwe"/>
                 <outlet property="headerImage" destination="McP-nt-YuM" id="RlZ-YG-P5x"/>
                 <outlet property="productDetailTableView" destination="LKJ-oL-Bif" id="QnC-gB-JQt"/>
@@ -144,13 +143,18 @@
                                     <action selector="MessageButton:" destination="-1" eventType="touchUpInside" id="fGz-sN-scZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Caret left" translatesAutoresizingMaskIntoConstraints="NO" id="HbB-aJ-h8t">
-                                <rect key="frame" x="35" y="55.5" width="11" height="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G63-K4-n5r">
+                                <rect key="frame" x="35" y="56" width="11" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="19" id="AYI-iQ-ZJJ"/>
-                                    <constraint firstAttribute="width" constant="11" id="tJP-gD-4ET"/>
+                                    <constraint firstAttribute="height" constant="18" id="61b-uZ-Ku4"/>
+                                    <constraint firstAttribute="width" constant="11" id="xCH-af-b9W"/>
                                 </constraints>
-                            </imageView>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="Caret left"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="sud-At-pPO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -160,18 +164,18 @@
                             <constraint firstItem="b5p-ku-ueU" firstAttribute="top" secondItem="WnJ-Lh-54h" secondAttribute="bottom" constant="41" id="9of-0Y-BpF"/>
                             <constraint firstItem="b5p-ku-ueU" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="26" id="ATK-HW-o6F"/>
                             <constraint firstAttribute="trailing" secondItem="McP-nt-YuM" secondAttribute="trailing" id="BEK-SW-MCo"/>
+                            <constraint firstItem="G63-K4-n5r" firstAttribute="centerY" secondItem="gNX-FD-c1f" secondAttribute="centerY" id="CCq-do-P6Z"/>
                             <constraint firstItem="b5p-ku-ueU" firstAttribute="centerY" secondItem="fvb-xu-zbb" secondAttribute="centerY" id="CY8-Y2-hjq"/>
                             <constraint firstItem="McP-nt-YuM" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" id="G2X-HP-1wx"/>
                             <constraint firstItem="WnJ-Lh-54h" firstAttribute="top" secondItem="McP-nt-YuM" secondAttribute="bottom" constant="26" id="Gvh-9q-kYs"/>
                             <constraint firstItem="siD-6G-RYc" firstAttribute="centerY" secondItem="kkV-wC-FBY" secondAttribute="centerY" id="HqY-3Q-bXi"/>
+                            <constraint firstItem="G63-K4-n5r" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="35" id="IPK-zE-Fyx"/>
                             <constraint firstItem="gNX-FD-c1f" firstAttribute="top" secondItem="V3E-sV-oBs" secondAttribute="top" constant="50" id="JOS-rG-CJm"/>
                             <constraint firstItem="Xda-ZX-xgy" firstAttribute="top" secondItem="gNX-FD-c1f" secondAttribute="bottom" constant="10" id="SiC-AJ-CWi"/>
                             <constraint firstItem="kkV-wC-FBY" firstAttribute="top" secondItem="fvb-xu-zbb" secondAttribute="bottom" constant="30" id="TjS-28-HA8"/>
                             <constraint firstItem="fvb-xu-zbb" firstAttribute="top" secondItem="WnJ-Lh-54h" secondAttribute="bottom" constant="46" id="WuZ-kJ-fgN"/>
-                            <constraint firstItem="HbB-aJ-h8t" firstAttribute="centerY" secondItem="gNX-FD-c1f" secondAttribute="centerY" id="bFN-DE-b9h"/>
                             <constraint firstItem="fvb-xu-zbb" firstAttribute="leading" secondItem="b5p-ku-ueU" secondAttribute="trailing" constant="34" id="lQz-NA-L8e"/>
                             <constraint firstAttribute="trailing" secondItem="gNX-FD-c1f" secondAttribute="trailing" constant="37" id="rDK-iV-Qn9"/>
-                            <constraint firstItem="HbB-aJ-h8t" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="35" id="sfb-UA-snt"/>
                             <constraint firstAttribute="trailing" secondItem="Xda-ZX-xgy" secondAttribute="trailing" constant="37" id="tXO-N1-HKN"/>
                             <constraint firstItem="WnJ-Lh-54h" firstAttribute="leading" secondItem="V3E-sV-oBs" secondAttribute="leading" constant="21" id="wtK-N8-VlA"/>
                             <constraint firstAttribute="trailing" secondItem="siD-6G-RYc" secondAttribute="trailing" constant="26" id="ylG-XV-gtA"/>

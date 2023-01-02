@@ -22,11 +22,19 @@ class TapBarController: UITabBarController, UITabBarControllerDelegate {
         let tabOne = HomeViewController()
         let tabOneBarItem = UITabBarItem(title: "", image: UIImage(named: "Home_Icon"), selectedImage: UIImage(named: "selectedHomeIcon"))
         
+        tabOne.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+        tabOne.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        
+        self.tabBar.tintColor = UIColor(hexString: "#E4A371")
+        self.tabBar.unselectedItemTintColor = UIColor(hexString: "#E4A371")
         tabOne.tabBarItem = tabOneBarItem
     
         // Create Tab two
         let tabTwo = MessagesViewController()
         let tabTwoBarItem2 = UITabBarItem(title: "", image: UIImage(named: "UnselectedMessageIcon"), selectedImage: UIImage(named: "SelectedMessageIcon"))
+        
+        tabTwo.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+        tabTwo.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
         
         tabTwo.tabBarItem = tabTwoBarItem2
         
@@ -35,14 +43,35 @@ class TapBarController: UITabBarController, UITabBarControllerDelegate {
         
     }
     
+    func setNavigation() {
+        
+//        title = "Messages"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        
+    }
+    
+    @objc func addTapped(){
+        
+        print("cart Tapped")
+    }
+    
     func handleActionWhenSelectItem(_ item: UITabBarItem) {
 
         if item == (self.tabBar.items!)[0] {
 
             title = "Mohamed Noor Bokhari"
+            
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+            navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+            
         }else if item == (self.tabBar.items!)[1] {
 
             title = "Messages"
+            
+            navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Shopping-cart"), style: .plain, target: self, action: #selector(addTapped))
+            navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+            
         }else {
 
             title = ""

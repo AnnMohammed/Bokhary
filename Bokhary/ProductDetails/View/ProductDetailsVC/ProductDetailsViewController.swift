@@ -48,11 +48,24 @@ class ProductDetailsViewController: UIViewController {
         setUpModel()
         stylingButton()
         stylingView()
-        navigationController?.isNavigationBarHidden = true
         
         productDetailTableView.contentInsetAdjustmentBehavior = .never
         productDetailTableView.allowsMultipleSelection = true
         setupHeaderImage()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
         
     }
     
@@ -140,8 +153,11 @@ class ProductDetailsViewController: UIViewController {
         print("Added to cart")
         
     }
-    @IBOutlet weak var backButtonTapped: UIImageView!
     
-    
+    @IBAction func backButtonTapped(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+        
+    }
     
 }
